@@ -25,6 +25,13 @@ namespace AI
        [HideInInspector] public string guid;
         // position in the GUI
        [HideInInspector] public Vector2 pos;
+        //pos of the black board
+        [HideInInspector] public BlackBoard blackboard;
+        //ai agent
+
+        //Scriptable object binding
+        [TextArea] public string description;
+
 
         public State Update()
         {

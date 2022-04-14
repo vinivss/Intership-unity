@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7617317961584314977
+--- !u!114 &-4689531158478059655
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,14 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddaf5ebdc4d15c746b7f4d76f8a21ba8, type: 3}
-  m_Name: WaitNode
+  m_Script: {fileID: 11500000, guid: 5ef38c529fcf7be43a616b88c61ee79f, type: 3}
+  m_Name: DebugLogNode
   m_EditorClassIdentifier: 
   state: 0
   started: 0
-  guid: ecbaf5d04063a154980ce9c011e8d6e0
-  pos: {x: 367.00797, y: 135.78079}
-  waitTime: 1
+  guid: 0603712ae61df2b498ef104e4de564bc
+  pos: {x: -213, y: 309}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  message: 
 --- !u!114 &-3391321807907736512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32,8 +35,13 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: f9344cc368cf3954ab9fe1b3e8486ebc
-  pos: {x: 94.772835, y: 112.999916}
-  Children: []
+  pos: {x: -138, y: 159}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  Children:
+  - {fileID: -4689531158478059655}
+  - {fileID: 5836166695949460681}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50,11 +58,14 @@ MonoBehaviour:
   nodeList:
   - {fileID: 5833922270424401136}
   - {fileID: -3391321807907736512}
-  - {fileID: -7617317961584314977}
-  - {fileID: 4776659809734476794}
-  - {fileID: 7385332824309346647}
+  - {fileID: -4689531158478059655}
+  - {fileID: 5836166695949460681}
+  - {fileID: 5604283673151750873}
   treeState: 0
---- !u!114 &4776659809734476794
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+--- !u!114 &5604283673151750873
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -63,14 +74,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 958c361d3b9421745b9b9bb08a129a8d, type: 3}
-  m_Name: RepeatNode
+  m_Script: {fileID: 11500000, guid: 5ef38c529fcf7be43a616b88c61ee79f, type: 3}
+  m_Name: DebugLogNode
   m_EditorClassIdentifier: 
   state: 0
   started: 0
-  guid: 98cceeb443d58ff4eb4cd255b323466d
-  pos: {x: 351.99997, y: 272.26285}
-  child: {fileID: 0}
+  guid: 18b131b8680aaa94f84dcf181db43b22
+  pos: {x: 60, y: 403}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  message: 
 --- !u!114 &5833922270424401136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,9 +100,12 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 529c5f1457830924fa310ed7483e42f7
-  pos: {x: -100.142044, y: 112.99999}
+  pos: {x: -138, y: 48}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
   child: {fileID: -3391321807907736512}
---- !u!114 &7385332824309346647
+--- !u!114 &5836166695949460681
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,6 +119,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   started: 0
-  guid: 53e71768080873045b1a119d3ef2e1ad
-  pos: {x: 0, y: 0}
-  child: {fileID: 0}
+  guid: 7234e52c89c9b764b83b41d352ee0182
+  pos: {x: 60, y: 285}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  child: {fileID: 5604283673151750873}

@@ -4,11 +4,13 @@ using UnityEngine;
 using UnityEditor;
 namespace AI
 {
+   
     [CreateAssetMenu(fileName = "New Enemy", menuName = "Enemy AI/Enemy AI Stats ", order = 0)]
     public class EnemyScriptableObject : ScriptableObject
     {
+        
         //Sprite icon;
-     enum EnemyType
+        enum EnemyType
       {
             Melee,
             Ranged,
