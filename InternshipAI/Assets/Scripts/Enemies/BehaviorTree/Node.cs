@@ -50,6 +50,8 @@ namespace AI
                 OnStop();
                 started = false;
             }
+
+
             return state;
         }
 

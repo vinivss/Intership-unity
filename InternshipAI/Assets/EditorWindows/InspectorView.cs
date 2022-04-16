@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UIElements;
 using UnityEditor;
+using AI;
 public class InspectorView : VisualElement
 {
     public new class UxmlFactory : UxmlFactory<InspectorView, VisualElement.UxmlTraits> { }
@@ -18,7 +19,7 @@ public class InspectorView : VisualElement
         Clear();
 
         UnityEngine.Object.DestroyImmediate(editor);
-        Editor.CreateEditor(nodeView.node);
+        editor = Editor.CreateEditor(nodeView.node);
         IMGUIContainer container = new IMGUIContainer(() =>{
             if (editor.target)
             {

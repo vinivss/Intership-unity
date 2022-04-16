@@ -113,6 +113,7 @@
     border-right-color: rgb(255, 252, 0);
     border-top-color: rgb(255, 252, 0);
     border-bottom-color: rgb(255, 252, 0);
+    background-color: rgba(255, 252, 0, 255);
 }
 
 .success #node-state {

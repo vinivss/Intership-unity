@@ -53,6 +53,10 @@ public class BehaviourTreeEditor : EditorWindow
         blackboardView = root.Q<IMGUIContainer>();
         blackboardView.onGUIHandler = () =>
         {
+            //if (treeObject != null)
+            //{
+            treeObject.Update();
+            //}
             EditorGUILayout.PropertyField(blackboardProperty);
             treeObject.ApplyModifiedProperties();
         };
@@ -62,7 +66,7 @@ public class BehaviourTreeEditor : EditorWindow
     private void OnEnable()
     {
         EditorApplication.playModeStateChanged -= OnPlayModeStateChanged;
-        EditorApplication.playModeStateChanged -= OnPlayModeStateChanged;
+        EditorApplication.playModeStateChanged += OnPlayModeStateChanged;
     }
 
    
@@ -105,7 +109,7 @@ public class BehaviourTreeEditor : EditorWindow
         }
         if (Application.isPlaying)
         {
-            if (tree)
+            if (tree != null && treeView!= null)
             {
                 treeView.PopulateView(tree);
             }

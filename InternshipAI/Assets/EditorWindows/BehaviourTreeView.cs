@@ -130,21 +130,21 @@ public class BehaviourTreeView : GraphView
             var types = TypeCache.GetTypesDerivedFrom<ActionNode>();
             foreach(var type in types)
             {
-                evt.menu.AppendAction($"[{type.BaseType.Name}] { type.Name}", (a) => CreateNode(type));
+                evt.menu.AppendAction($"[{type.BaseType.Name}]/ { type.Name}", (a) => CreateNode(type));
             }
         }
         {
             var types = TypeCache.GetTypesDerivedFrom<CompositeNode>();
             foreach (var type in types)
             {
-                evt.menu.AppendAction($"[{type.BaseType.Name}] { type.Name}", (a) => CreateNode(type));
+                evt.menu.AppendAction($"[{type.BaseType.Name}]/ { type.Name}", (a) => CreateNode(type));
             }
         }
         {
             var types = TypeCache.GetTypesDerivedFrom<DecoratorNode>();
             foreach (var type in types)
             {
-                evt.menu.AppendAction($"[{type.BaseType.Name}] { type.Name}", (a) => CreateNode(type));
+                evt.menu.AppendAction($"[{type.BaseType.Name}]/ { type.Name}", (a) => CreateNode(type));
             }
         }
     }
@@ -157,7 +157,7 @@ public class BehaviourTreeView : GraphView
     void CreateNodeView(Node node)
     {
         NodeView nodeView = new NodeView(node);
-        OnNodeSelected = nodeView.OnNodeSelected;
+        nodeView.OnNodeSelected = OnNodeSelected;
         AddElement(nodeView);
     }
 

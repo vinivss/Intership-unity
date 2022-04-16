@@ -21,6 +21,10 @@ using AI;
         protected override State OnUpdate()
         {
             Debug.Log($"OnStop{message}");
+
+        Debug.Log($"Blackboard: {blackboard.moveToPosition}");
+
+        blackboard.moveToPosition.x += 1;
             return State.SUCCESS;
         }
     }
