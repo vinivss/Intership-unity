@@ -28,7 +28,7 @@ namespace AI
         //pos of the black board
         [HideInInspector] public BlackBoard blackboard;
         //ai agent
-
+        [HideInInspector]public AIAgent agent;
         //Scriptable object binding
         [TextArea] public string description;
 

@@ -10,7 +10,7 @@ namespace AI
     {
         
         //Sprite icon;
-        enum EnemyType
+       public enum EnemyType
       {
             Melee,
             Ranged,
@@ -25,24 +25,24 @@ namespace AI
 
         [Header("Attributes")]
         [Tooltip("Does the AI use smart Pathfinding?")]
-        [SerializeField] bool Smart;
+        [SerializeField] public bool Smart;
         [Tooltip("How much health will the enemy have?")]
-        [SerializeField][Min(0)] int Health;
+        [SerializeField][Min(0)] public int Health;
         [Header("Movement Attributes")]
         [Tooltip("At what speed does this enemy walk?")]
-        [SerializeField] [Min(0)] float WalkSpeed;
+        [SerializeField] [Min(0)] public float WalkSpeed;
         [Tooltip("How fast does this enemy run?")]
-        [SerializeField] [Min(0)] float RunSpeed;
+        [SerializeField] [Min(0)] public float RunSpeed;
         [Header("Attack Attributes")]
         [Tooltip("How fast does this enemy attack?")]
-        [SerializeField] [Min(0)] float attackRate;
+        [SerializeField] [Min(0)] public float attackRate;
         [Tooltip("How much damage does this enemy do?")]
-        [SerializeField] [Min(0)] int damage;
+        [SerializeField] [Min(0)] public int damage;
         [Header("Search Attributes")]
         [Tooltip("How long will this enemy search for someone?")]
-        [SerializeField] [Min(0)] int SearchTime;
+        [SerializeField] [Min(0)] public int SearchTime;
         [Tooltip("How fast will this enemy turn while searching?")]
-        [SerializeField] [Min(0)] int SearchTurnSpeed;
+        [SerializeField] [Min(0)] public  int SearchTurnSpeed;
 
 
         //private void OnValidate()

@@ -158,11 +158,12 @@ namespace AI
             return tree;
         }
 
-        public void Bind()
+        public void Bind(AIAgent agent)
         {
             Traverse(rootNode, node =>
             {
                 node.blackboard = blackboard;
+                node.agent = agent;
             });
         }
     }
