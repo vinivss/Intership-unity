@@ -32,6 +32,9 @@ public class AIAgent : MonoBehaviour
     [Tooltip("List of waypoints that teh enemy will patrol through")]
     public List<Transform> waypoints = new List<Transform>();
 
+    [Tooltip("Navmesh for the AiAgent")]
+    public NavMeshAgent navMesh;
+
    GameObject thisGameObject;
 
 #pragma warning disable CS0108 // Member hides inherited member; missing new keyword
@@ -57,6 +60,7 @@ public class AIAgent : MonoBehaviour
         SearchTurnSpeed = enemyattributes.SearchTurnSpeed;
         transform = gameObject.transform;
         thisGameObject = gameObject;
+        navMesh = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame

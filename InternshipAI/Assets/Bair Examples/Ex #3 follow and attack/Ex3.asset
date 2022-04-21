@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9210425373971896792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b41a703ddda7a44a1857a2964708b7, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 24d17ac451e9e2e4993e9f17497a1606
+  pos: {x: -49.000015, y: 463.24698}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  Children:
+  - {fileID: -6284797934641931591}
+  - {fileID: 3139867165268880508}
+--- !u!114 &-6284797934641931591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcb0b48f75b88d54f8566173f79f28b9, type: 3}
+  m_Name: CheckRange
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 7c1a6311695158844978c1cec36b3eed
+  pos: {x: -123.999916, y: 631.5019}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-3417400912999819931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4224d0b66cbe863428df579aee3384bf, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 33fb4efe4f04e134fbc67e52b34d0663
+  pos: {x: 25.999992, y: 297.255}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  Children:
+  - {fileID: -9210425373971896792}
+  - {fileID: 561524502258082256}
+--- !u!114 &-2663297946853678726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 958c361d3b9421745b9b9bb08a129a8d, type: 3}
+  m_Name: RepeatNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 74d919255fea24a49a91ce56274c99f3
+  pos: {x: 26.000046, y: 143.5497}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: -3417400912999819931}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8564dc933eb0d4795877e930fd276d, type: 3}
+  m_Name: Ex3
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 8840987738529970155}
+  nodeList:
+  - {fileID: 8840987738529970155}
+  - {fileID: -2663297946853678726}
+  - {fileID: -3417400912999819931}
+  - {fileID: -9210425373971896792}
+  - {fileID: -6284797934641931591}
+  - {fileID: 561524502258082256}
+  - {fileID: 3139867165268880508}
+  treeState: 0
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+--- !u!114 &561524502258082256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da9ddd12e58fd1d41b5662979c426a62, type: 3}
+  m_Name: PatrolNavmesh
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 6f4bb6b7141b5e144869b14d201ec631
+  pos: {x: 156.88583, y: 487}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &3139867165268880508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54b11a67fa09b21499687ca9f6d58611, type: 3}
+  m_Name: GoToTargetNavmesh
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: ae300c4d9f059134781004ca2378d794
+  pos: {x: 48.972195, y: 632}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &8840987738529970155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b29f7614ca269840ab899ea50d5dbed, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: a70c3dd924215224bb1b01cbd3a63b09
+  pos: {x: 26.235111, y: 20.988066}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: -2663297946853678726}

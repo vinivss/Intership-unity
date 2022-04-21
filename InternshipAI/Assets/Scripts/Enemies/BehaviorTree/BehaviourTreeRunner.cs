@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using AI;
@@ -17,5 +17,7 @@ public class BehaviourTreeRunner : MonoBehaviour
     void Update()
     {
         tree.Update();
+
+
     }
 }
