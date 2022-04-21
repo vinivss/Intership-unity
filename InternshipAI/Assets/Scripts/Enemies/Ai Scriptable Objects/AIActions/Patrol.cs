@@ -15,12 +15,12 @@ public class Patrol : ActionNode
 
     protected override void OnStart()
     {
-        
+       
     }
 
     protected override void OnStop()
     {
-        throw new System.NotImplementedException();
+        
     }
 
     protected override State OnUpdate()
@@ -45,7 +45,7 @@ public class Patrol : ActionNode
                 waitCount = 0f;
                 iswaiting = true;
 
-                waypointIndex = (waypointIndex + 1) % agent.waypoints.Count;
+                waypointIndex = (waypointIndex + 1);
             }
 
             else
@@ -54,9 +54,13 @@ public class Patrol : ActionNode
                 transform.LookAt(wp.position);
             }
         }
-
+        if (waypointIndex == agent.waypoints.Count)
+        {
+            waypointIndex = 0;
+            state = State.SUCCESS;
+            return state;
+        }
         state = State.RUNNING;
-
         return state;
 
 

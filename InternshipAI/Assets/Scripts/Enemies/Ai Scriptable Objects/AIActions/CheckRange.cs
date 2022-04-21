@@ -6,18 +6,31 @@ using AI;
 
 public class CheckRange : ActionNode
 {
+    
     protected override void OnStart()
     {
-        throw new System.NotImplementedException();
+        
     }
 
     protected override void OnStop()
     {
-        throw new System.NotImplementedException();
+        
     }
 
     protected override State OnUpdate()
     {
-        throw new System.NotImplementedException();
+        
+        if(agent.inSphere == true)
+        {
+            agent.inSphere = false;
+
+            return State.SUCCESS;
+        }
+
+      
+            return State.FAIL;
+        
     }
+
+
 }

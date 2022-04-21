@@ -25,7 +25,7 @@ public class SimpCharaCont : MonoBehaviour
         {
             currMov = ctx.ReadValue<Vector2>();
            
-            Debug.Log("Move");
+          
             movePressed = currMov.x != 0 || currMov.y != 0;
         };
     }

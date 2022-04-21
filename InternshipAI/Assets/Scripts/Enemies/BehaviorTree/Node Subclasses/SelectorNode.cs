@@ -17,7 +17,7 @@ public class SelectorNode : CompositeNode
 
     protected override void OnStop()
     {
-        throw new System.NotImplementedException();
+        
     }
 
     protected override State OnUpdate()
@@ -31,6 +31,8 @@ public class SelectorNode : CompositeNode
                 return State.RUNNING;
                   
             case State.FAIL:
+                curr++;
+
                 break;
             case State.SUCCESS:
                 return State.SUCCESS;

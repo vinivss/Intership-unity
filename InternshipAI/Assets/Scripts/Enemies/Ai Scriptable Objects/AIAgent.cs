@@ -32,10 +32,18 @@ public class AIAgent : MonoBehaviour
     [Tooltip("List of waypoints that teh enemy will patrol through")]
     public List<Transform> waypoints = new List<Transform>();
 
+   GameObject thisGameObject;
+
 #pragma warning disable CS0108 // Member hides inherited member; missing new keyword
     [HideInInspector]public Transform transform;
 #pragma warning restore CS0108 // Member hides inherited member; missing new keyword
 
+    [HideInInspector] public bool inSphere;
+
+    // this little variable will just add be a target for the AI.
+    [HideInInspector] public List<GameObject> targetList = new List<GameObject>();
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +56,7 @@ public class AIAgent : MonoBehaviour
         SearchTime = enemyattributes.SearchTime;
         SearchTurnSpeed = enemyattributes.SearchTurnSpeed;
         transform = gameObject.transform;
+        thisGameObject = gameObject;
     }
 
     // Update is called once per frame
@@ -55,4 +64,14 @@ public class AIAgent : MonoBehaviour
     {
         
     }
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            inSphere = true;
+            targetList.Add(other.gameObject);
+        }
+
+    }
+
 }

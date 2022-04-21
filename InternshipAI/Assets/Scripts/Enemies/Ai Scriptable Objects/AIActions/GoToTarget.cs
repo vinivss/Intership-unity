@@ -5,18 +5,22 @@ using AI;
 
 public class GoToTarget : ActionNode
 {
+    Transform transform;
     protected override void OnStart()
     {
-        throw new System.NotImplementedException();
+       
     }
 
     protected override void OnStop()
     {
-        throw new System.NotImplementedException();
+        
     }
 
     protected override State OnUpdate()
     {
-        throw new System.NotImplementedException();
+        transform = agent.transform;
+        Debug.Log("Your Go To is being called");
+        transform.position = Vector3.MoveTowards(transform.position, agent.targetList[0].transform.position, agent.WalkSpeed + Time.deltaTime);
+        return State.RUNNING;
     }
 }
