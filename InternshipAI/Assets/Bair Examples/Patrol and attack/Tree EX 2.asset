@@ -19,6 +19,9 @@ MonoBehaviour:
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
   agent: {fileID: 0}
   description: 
   Children:
@@ -43,8 +46,11 @@ MonoBehaviour:
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
   agent: {fileID: 0}
-  description: This is currently forever looping. gotta change that.
+  description: 
 --- !u!114 &-6776566105039241783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,6 +70,9 @@ MonoBehaviour:
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
   agent: {fileID: 0}
   description: 
   child: {fileID: -1858400963579641218}
@@ -86,6 +95,9 @@ MonoBehaviour:
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
   agent: {fileID: 0}
   description: 
   child: {fileID: -6776566105039241783}
@@ -108,6 +120,9 @@ MonoBehaviour:
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
   agent: {fileID: 0}
   description: 
   Children:
@@ -138,6 +153,9 @@ MonoBehaviour:
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
 --- !u!114 &2881943145581200082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,6 +175,9 @@ MonoBehaviour:
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
   agent: {fileID: 0}
   description: 
 --- !u!114 &3726844821979488390
@@ -178,5 +199,8 @@ MonoBehaviour:
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
   agent: {fileID: 0}
   description: 

@@ -22,9 +22,7 @@ using AI;
         {
             Debug.Log($"OnStop{message}");
 
-        Debug.Log($"Blackboard: {blackboard.moveToPosition}");
-
-        blackboard.moveToPosition.x += 1;
+       
             return State.SUCCESS;
         }
     }

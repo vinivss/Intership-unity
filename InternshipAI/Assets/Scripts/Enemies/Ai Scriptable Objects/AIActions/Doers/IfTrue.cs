@@ -3,34 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using AI;
 
-
-public class CheckRange : ActionNode
+public class IfTrue : DecoratorNode
 {
-    
     protected override void OnStart()
     {
-        
+
     }
 
     protected override void OnStop()
     {
-        
+
     }
 
     protected override State OnUpdate()
     {
-        
-        if(agent.inSphere == true)
+        child.Update();
+        if (child.state == State.SUCCESS)
         {
-            agent.inSphere = false;
-
             return State.SUCCESS;
         }
 
-      
-            return State.FAIL;
-        
+        return State.FAIL;
     }
-
-
 }

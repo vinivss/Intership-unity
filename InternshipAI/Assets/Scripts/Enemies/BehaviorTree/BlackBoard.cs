@@ -9,7 +9,8 @@ using AI;
 [System.Serializable]
 public class BlackBoard
 {
-    public Vector3 moveToPosition;
-    public GameObject moveToObject;
-
+    public float maxDistance = 1.0f;
+    public float maxTime = 1.0f;
+    public bool alive = true;
+    public string enemyType;
 }

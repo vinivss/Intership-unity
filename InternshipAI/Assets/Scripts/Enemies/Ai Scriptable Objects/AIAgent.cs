@@ -6,52 +6,46 @@ using UnityEngine.AI;
 public class AIAgent : MonoBehaviour
 {
     [SerializeField] EnemyScriptableObject enemyattributes;
-    //[SerializeField] NavMeshAgent navMeshAgent;
 
-    [Header("Attributes")]
-    [Tooltip("Does the AI use smart Pathfinding?")]
+    [HideInInspector] public string enemyType;
+    //Variables hidden in inspector
     [HideInInspector] public bool Smart;
-    [Tooltip("How much health will the enemy have?")]
-    [HideInInspector] [Min(0)] public int Health;
-    [Header("Movement Attributes")]
-    [Tooltip("At what speed does this enemy walk?")]
+    [HideInInspector] [Min(0)] public float HealthMax;
     [HideInInspector] [Min(0)] public float WalkSpeed;
-    [Tooltip("How fast does this enemy run?")]
     [HideInInspector] [Min(0)] public float RunSpeed;
-    [Header("Attack Attributes")]
-    [Tooltip("How fast does this enemy attack?")]
     [HideInInspector] [Min(0)] public float attackRate;
-    [Tooltip("How much damage does this enemy do?")]
     [HideInInspector] [Min(0)] public int damage;
-    [Header("Search Attributes")]
-    [Tooltip("How long will this enemy search for someone?")]
     [HideInInspector] [Min(0)] public int SearchTime;
-    [Tooltip("How fast will this enemy turn while searching?")]
     [HideInInspector] [Min(0)] public int SearchTurnSpeed;
-
-    [Tooltip("List of waypoints that teh enemy will patrol through")]
-    public List<Transform> waypoints = new List<Transform>();
-
-    [Tooltip("Navmesh for the AiAgent")]
-    public NavMeshAgent navMesh;
-
-   GameObject thisGameObject;
-
 #pragma warning disable CS0108 // Member hides inherited member; missing new keyword
-    [HideInInspector]public Transform transform;
+    [HideInInspector] public Transform transform;
 #pragma warning restore CS0108 // Member hides inherited member; missing new keyword
-
     [HideInInspector] public bool inSphere;
-
+    [HideInInspector] public MeleeRangeChecker rangeChecker;
     // this little variable will just add be a target for the AI.
     [HideInInspector] public List<GameObject> targetList = new List<GameObject>();
+    [HideInInspector] public Animator animator;
+    [HideInInspector] public Rigidbody[] rigidbodies;
 
-    
+    //public variables
+    public List<Transform> waypoints = new List<Transform>();
+    [Tooltip("Navmesh for the AiAgent")]
+    public NavMeshAgent navMesh;
+    [Tooltip("Current Health of the AI")]
+    public float currentHealth;
+
+    //private variables
+    GameObject thisGameObject;
+
+
+
+  
     // Start is called before the first frame update
     void Start()
     {
+        GetTypeOfAI();
         Smart = enemyattributes.Smart;
-        Health = enemyattributes.Health;
+        HealthMax= enemyattributes.HealthMax;
         WalkSpeed = enemyattributes.WalkSpeed;
         RunSpeed = enemyattributes.RunSpeed;
         attackRate = enemyattributes.attackRate;
@@ -61,12 +55,24 @@ public class AIAgent : MonoBehaviour
         transform = gameObject.transform;
         thisGameObject = gameObject;
         navMesh = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
+        rigidbodies = GetComponentsInChildren<Rigidbody>();
+        currentHealth = HealthMax;
+        rangeChecker = GetComponentInChildren<MeleeRangeChecker>();
+        //make sure that on start all ragdolls are deactivated
+        StartRigidbodies();
+        foreach(var rigidBody in rigidbodies)
+        {
+            rigidBody.gameObject.AddComponent<HitBox>();
+        }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        animator.SetFloat("Speed", navMesh.velocity.magnitude);
+        transform = gameObject.transform;
     }
     void OnTriggerEnter(Collider other)
     {
@@ -75,6 +81,34 @@ public class AIAgent : MonoBehaviour
             inSphere = true;
             targetList.Add(other.gameObject);
         }
+
+    }
+    public void GetTypeOfAI()
+    {
+        switch(enemyattributes.enemyType)
+        {
+            case EnemyScriptableObject.EnemyType.Melee:
+                enemyType = "Melee";
+                break;
+            case EnemyScriptableObject.EnemyType.Ranged:
+                enemyType = "Ranged";
+                break;
+            case EnemyScriptableObject.EnemyType.Mixed:
+                enemyType = "Mixed";
+                break;
+        }
+    }    
+    public void StartRigidbodies()
+    {
+       foreach(var rigidBody in rigidbodies)
+        {
+            rigidBody.isKinematic = false;
+        }
+    }
+
+    public void TakeDamage(float amount)
+    {
+        currentHealth -= amount;
 
     }
 

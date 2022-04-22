@@ -11,7 +11,11 @@ public class PatrolNavmesh : ActionNode
 
     float waitCount = 0;
     bool iswaiting = false;
+   
 
+  
+
+   
 
     protected override void OnStart()
     {
@@ -25,7 +29,8 @@ public class PatrolNavmesh : ActionNode
 
     protected override State OnUpdate()
     {
-        Debug.Log(waypointIndex);
+        //Debug.Log($"Blackboard Max Distance{blackboard.maxDistance}");
+        //Debug.Log($"Blackboard Max Time{blackboard.maxTime}");
         transform = agent.transform;
 
         if (iswaiting)
@@ -46,13 +51,14 @@ public class PatrolNavmesh : ActionNode
                 transform.position = wp.position;
                 waitCount = 0f;
                 iswaiting = true;
-                agent.navMesh.destination = wp.position;
+             
+                //agent.navMesh.destination = wp.position;
                 waypointIndex++;
             }
 
             else
             {
-                agent.navMesh.destination = wp.position;
+               agent.navMesh.destination = wp.position;
                
             }
         }

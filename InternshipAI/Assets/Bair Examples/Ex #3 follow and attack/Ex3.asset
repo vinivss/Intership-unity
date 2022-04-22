@@ -19,6 +19,8 @@ MonoBehaviour:
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
   agent: {fileID: 0}
   description: 
   Children:
@@ -43,6 +45,8 @@ MonoBehaviour:
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
   agent: {fileID: 0}
   description: 
 --- !u!114 &-3417400912999819931
@@ -60,10 +64,12 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 33fb4efe4f04e134fbc67e52b34d0663
-  pos: {x: 25.999992, y: 297.255}
+  pos: {x: 25.999971, y: 279.35428}
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
   agent: {fileID: 0}
   description: 
   Children:
@@ -88,6 +94,8 @@ MonoBehaviour:
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
   agent: {fileID: 0}
   description: 
   child: {fileID: -3417400912999819931}
@@ -116,6 +124,8 @@ MonoBehaviour:
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
 --- !u!114 &561524502258082256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,10 +141,12 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 6f4bb6b7141b5e144869b14d201ec631
-  pos: {x: 156.88583, y: 487}
+  pos: {x: 155.99998, y: 486.99994}
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
   agent: {fileID: 0}
   description: 
 --- !u!114 &3139867165268880508
@@ -156,6 +168,8 @@ MonoBehaviour:
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
   agent: {fileID: 0}
   description: 
 --- !u!114 &8840987738529970155
@@ -177,6 +191,8 @@ MonoBehaviour:
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
   agent: {fileID: 0}
   description: 
   child: {fileID: -2663297946853678726}
