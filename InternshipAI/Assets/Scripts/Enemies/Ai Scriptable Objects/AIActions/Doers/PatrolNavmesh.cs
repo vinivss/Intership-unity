@@ -33,25 +33,25 @@ public class PatrolNavmesh : ActionNode
         //Debug.Log($"Blackboard Max Time{blackboard.maxTime}");
         transform = agent.transform;
 
-        if (iswaiting)
-        {
-            waitCount += Time.deltaTime;
-            if (waitCount >= agent.SearchTime)
-            {
-                iswaiting = false;
-            }
-        }
-        else
-        {
-            Transform wp = agent.waypoints[waypointIndex];
+        //if (iswaiting)
+        //{
+        //    waitCount += Time.deltaTime;
+        //    if (waitCount >= agent.SearchTime)
+        //    {
+        //        iswaiting = false;
+        //    }
+        //}
+        //else
+        //{
+        Transform wp = agent.waypoints[waypointIndex];
 
 
-            if (Vector3.Distance(transform.position, wp.position) < 0.1f )
+        if (Vector3.Distance(transform.position, wp.position) < 0.1f )
             {
                 transform.position = wp.position;
                 waitCount = 0f;
-                iswaiting = true;
-             
+                //iswaiting = true;
+
                 //agent.navMesh.destination = wp.position;
                 waypointIndex++;
             }
@@ -61,7 +61,7 @@ public class PatrolNavmesh : ActionNode
                agent.navMesh.destination = wp.position;
                
             }
-        }
+        //}
         if (waypointIndex == agent.waypoints.Count)
         {
             waypointIndex = 0;

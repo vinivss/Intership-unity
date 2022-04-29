@@ -20,5 +20,5 @@ MonoBehaviour:
   RunSpeed: 20
   attackRate: 0
   damage: 0
-  SearchTime: 5
+  SearchTime: 2
   SearchTurnSpeed: 0

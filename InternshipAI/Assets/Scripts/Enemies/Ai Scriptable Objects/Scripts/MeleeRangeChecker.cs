@@ -8,8 +8,10 @@ public class MeleeRangeChecker : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        
+        if (other.tag == "Player")
         {
+            Debug.Log("inMelee");
             InMelee = true;
         }
 

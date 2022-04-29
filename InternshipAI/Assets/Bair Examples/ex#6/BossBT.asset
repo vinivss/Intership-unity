@@ -1,0 +1,250 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8780729430068825424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31b84fb57fdb03d4d932315b885c139e, type: 3}
+  m_Name: DeathCheck
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: b09ab587dff877b43aeb78129002baf0
+  pos: {x: -387, y: 548}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-8369645940392257876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd3fdf880f2dd446a2ff5e5c188e24b, type: 3}
+  m_Name: BossDeath
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 2bfeaeda22f29bf4899db8222a21275e
+  pos: {x: -176, y: 712}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-5060222483365506896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b41a703ddda7a44a1857a2964708b7, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 94a5a018ca3062247b52eee77af014cf
+  pos: {x: -236.99998, y: 548.00006}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+  agent: {fileID: 0}
+  description: 
+  Children:
+  - {fileID: -841899723929548514}
+  - {fileID: -8369645940392257876}
+--- !u!114 &-841899723929548514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c073e941c3c8225469a7e0d696f56583, type: 3}
+  m_Name: SetDead
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: bd1c696173f3210408c819e2a7be49e0
+  pos: {x: -326, y: 712}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-603796230817218410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4224d0b66cbe863428df579aee3384bf, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 72d4dbd2d70fac74b9712eccee0da4b8
+  pos: {x: 273.1794, y: 548.00006}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+  agent: {fileID: 0}
+  description: 
+  Children: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8564dc933eb0d4795877e930fd276d, type: 3}
+  m_Name: BossBT
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 7925547772537143493}
+  nodeList:
+  - {fileID: 7925547772537143493}
+  - {fileID: 3839102905973728574}
+  - {fileID: 1108913727718599478}
+  - {fileID: -603796230817218410}
+  - {fileID: -8780729430068825424}
+  - {fileID: 5531144545325551657}
+  - {fileID: -5060222483365506896}
+  - {fileID: -841899723929548514}
+  - {fileID: -8369645940392257876}
+  treeState: 0
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+--- !u!114 &1108913727718599478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b41a703ddda7a44a1857a2964708b7, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: cd53afd6511fef741affd3c447e2eb06
+  pos: {x: -162.0325, y: 278}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+  agent: {fileID: 0}
+  description: 
+  Children:
+  - {fileID: 5531144545325551657}
+  - {fileID: -603796230817218410}
+--- !u!114 &3839102905973728574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 263d65d652468454b8adef092c15a326, type: 3}
+  m_Name: RepeatIfAlive
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: e382fd073534fb04d8ad4d0293753f03
+  pos: {x: 0, y: 141}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: 1108913727718599478}
+--- !u!114 &5531144545325551657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b41a703ddda7a44a1857a2964708b7, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 4d1286af41981c14a995805a0a7fa564
+  pos: {x: -312, y: 405}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+  agent: {fileID: 0}
+  description: 
+  Children:
+  - {fileID: -8780729430068825424}
+  - {fileID: -5060222483365506896}
+--- !u!114 &7925547772537143493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b29f7614ca269840ab899ea50d5dbed, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 03ea3f33fca5b6141b6c658a406be03c
+  pos: {x: 0, y: 0}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: 3839102905973728574}

@@ -4,6 +4,8 @@ using UnityEngine;
 using AI;
 public class WithinMeleeRange : ActionNode
 {
+    public bool inRange;
+  
     protected override void OnStart()
     {
         
@@ -16,8 +18,13 @@ public class WithinMeleeRange : ActionNode
 
     protected override State OnUpdate()
     {
-        if (agent.rangeChecker.InMelee == true)
+        MeleeRangeChecker rangeChecker= agent.rangeChecker;  
+        inRange = rangeChecker.InMelee;
+        Debug.Log(rangeChecker.InMelee);
+        if (inRange == true)
         {
+            Debug.Log("BURUSHITTO BUREJING");
+
             return State.SUCCESS;
         }
 

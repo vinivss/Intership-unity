@@ -36,6 +36,8 @@ public class AIAgent : MonoBehaviour
 
     //private variables
     GameObject thisGameObject;
+    [Tooltip("Range Check bounds for Melee")]
+    
 
 
 
@@ -44,6 +46,7 @@ public class AIAgent : MonoBehaviour
     void Start()
     {
         GetTypeOfAI();
+        rangeChecker = GetComponentInChildren<MeleeRangeChecker>();
         Smart = enemyattributes.Smart;
         HealthMax= enemyattributes.HealthMax;
         WalkSpeed = enemyattributes.WalkSpeed;
@@ -58,7 +61,7 @@ public class AIAgent : MonoBehaviour
         animator = GetComponent<Animator>();
         rigidbodies = GetComponentsInChildren<Rigidbody>();
         currentHealth = HealthMax;
-        rangeChecker = GetComponentInChildren<MeleeRangeChecker>();
+        
         //make sure that on start all ragdolls are deactivated
         StartRigidbodies();
         foreach(var rigidBody in rigidbodies)
@@ -79,10 +82,20 @@ public class AIAgent : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             inSphere = true;
+           
             targetList.Add(other.gameObject);
         }
 
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            inSphere = false;
+        }
+
+     }
     public void GetTypeOfAI()
     {
         switch(enemyattributes.enemyType)
@@ -102,7 +115,7 @@ public class AIAgent : MonoBehaviour
     {
        foreach(var rigidBody in rigidbodies)
         {
-            rigidBody.isKinematic = false;
+            rigidBody.isKinematic = true;
         }
     }
 

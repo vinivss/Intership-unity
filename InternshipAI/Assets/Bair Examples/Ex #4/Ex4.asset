@@ -43,7 +43,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 3ed577c2b20b88e488c7e5ccd1356666
-  pos: {x: -49.999985, y: 1311}
+  pos: {x: -50, y: 1311}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -53,7 +53,7 @@ MonoBehaviour:
   description: 
   Children:
   - {fileID: -2918411027407173555}
-  - {fileID: 7611842793372087900}
+  - {fileID: 4943199000845723025}
 --- !u!114 &-8585305223357966211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 7c1a6311695158844978c1cec36b3eed
-  pos: {x: -337.00003, y: 656.00006}
+  pos: {x: -337.00012, y: 693}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -153,30 +153,6 @@ MonoBehaviour:
     enemyType: 
   agent: {fileID: 0}
   description: 
---- !u!114 &-5926179943812730284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ef38c529fcf7be43a616b88c61ee79f, type: 3}
-  m_Name: DebugLogNode
-  m_EditorClassIdentifier: 
-  state: 0
-  started: 0
-  guid: ad183e4e0bc35de459818074e6e932bc
-  pos: {x: 895.00006, y: 1549.0002}
-  blackboard:
-    maxDistance: 1
-    maxTime: 1
-    alive: 1
-    enemyType: 
-  agent: {fileID: 0}
-  description: Stand in for the Melee Range behaviour
-  message: Melee range react
 --- !u!114 &-5784626547749094505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,7 +194,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: bf2f8d6fd60a43e40b197a26d1c90280
-  pos: {x: 844.8501, y: 1357.0002}
+  pos: {x: 813, y: 1283}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -228,7 +204,7 @@ MonoBehaviour:
   description: 
   Children:
   - {fileID: 4739561268494468539}
-  - {fileID: -5926179943812730284}
+  - {fileID: 5119008363986153412}
 --- !u!114 &-4637888293246070129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,7 +246,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 7c970dda3f0325245ad0be41c5a8220d
-  pos: {x: 1177.1486, y: 1357.373}
+  pos: {x: 1170.0608, y: 1274.0002}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -375,7 +351,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 89902aebbfa0bde40b7a9a4e46fa39d2
-  pos: {x: -107.999916, y: 1504}
+  pos: {x: -118, y: 1504}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -448,7 +424,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 613534dd30fe6c145b5748c421acc34d
-  pos: {x: 1045.1487, y: 1179.373}
+  pos: {x: 1038.0608, y: 1096.0001}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -499,7 +475,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 5cfb771958515f6469bebe803b713b32
-  pos: {x: 561.1486, y: 1311.3728}
+  pos: {x: 554.06085, y: 1228.0001}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -522,7 +498,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 35bf550ca244c0a459298286e27ee812
-  pos: {x: 1326.9996, y: 1572.9999}
+  pos: {x: 1320.0608, y: 1490.0002}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -546,7 +522,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 6bd7ef272473a844185077798c727d76
-  pos: {x: 179.00012, y: 583}
+  pos: {x: 194.87013, y: 610}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -593,7 +569,6 @@ MonoBehaviour:
   - {fileID: 2167709237134286880}
   - {fileID: 5048511023952242070}
   - {fileID: 8490259158054217047}
-  - {fileID: 7611842793372087900}
   - {fileID: 3604449479090667968}
   - {fileID: 4765072293070489737}
   - {fileID: 8426590380138215880}
@@ -613,9 +588,10 @@ MonoBehaviour:
   - {fileID: 2466003874007001417}
   - {fileID: 139190218522858577}
   - {fileID: 8549076760292232635}
-  - {fileID: -5926179943812730284}
   - {fileID: -818055254731622072}
   - {fileID: -1426444036052703446}
+  - {fileID: 5119008363986153412}
+  - {fileID: 4943199000845723025}
   treeState: 0
   blackboard:
     maxDistance: 1
@@ -637,7 +613,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: e61655cfd5a693c4b89175d8e4c5cc9f
-  pos: {x: 1102, y: 1710}
+  pos: {x: 1095.0609, y: 1627.0002}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -660,7 +636,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: b9e36e38eb426124c94486d141603012
-  pos: {x: 212.65001, y: 447}
+  pos: {x: 228.8701, y: 474}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -686,7 +662,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 6f4bb6b7141b5e144869b14d201ec631
-  pos: {x: 336, y: 583}
+  pos: {x: 351.87012, y: 610}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -737,7 +713,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 9006af9760a9eb0428acc1503804af1d
-  pos: {x: 573.1486, y: 1179.373}
+  pos: {x: 566.0608, y: 1096.0001}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -785,7 +761,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 75d039c243cca70438484dad280db7e5
-  pos: {x: -497.99994, y: 1658.0002}
+  pos: {x: -498.00003, y: 1657.9998}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -808,7 +784,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 738598c49393f77458b6a7700205ebfb
-  pos: {x: 723, y: 1709.9999}
+  pos: {x: 716.0608, y: 1627.0002}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -854,7 +830,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 1e55fda672bb79a42a6100d73a874fcf
-  pos: {x: -497.99994, y: 1504}
+  pos: {x: -498.00003, y: 1495.0001}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -924,7 +900,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: f0d21fb01644a4243b40790288e95a76
-  pos: {x: 696.14856, y: 1014.3729}
+  pos: {x: 689.0608, y: 931.0002}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -950,7 +926,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 0fead37d2833ae547885449df3c835bd
-  pos: {x: 723, y: 1548.9998}
+  pos: {x: 716.0608, y: 1466.0002}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -983,6 +959,29 @@ MonoBehaviour:
   agent: {fileID: 0}
   description: Place Holder for AI behaviour
   message: Mixed Character approach
+--- !u!114 &4943199000845723025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d88de9b6c9996724bbc6b05cab805537, type: 3}
+  m_Name: RunAwayfromPlayer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 418b56f9a5be3cb429e1af59058fe0ee
+  pos: {x: 32, y: 1504}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+  agent: {fileID: 0}
+  description: 
 --- !u!114 &5048511023952242070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -999,6 +998,29 @@ MonoBehaviour:
   started: 0
   guid: d551df2b856eb33489a8f97646a4efed
   pos: {x: -323.9999, y: 1504}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &5119008363986153412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f5e1fd797a0b574394aab5f4e4c74f1, type: 3}
+  m_Name: MeleeJab
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 2bb3b68d1d6f4c24aba97ca5019fbc4a
+  pos: {x: 876, y: 1466}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -1055,30 +1077,6 @@ MonoBehaviour:
   Children:
   - {fileID: -2002472136221440835}
   - {fileID: 3936601354489831222}
---- !u!114 &7611842793372087900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ef38c529fcf7be43a616b88c61ee79f, type: 3}
-  m_Name: DebugLogNode
-  m_EditorClassIdentifier: 
-  state: 0
-  started: 0
-  guid: 848278e19a9e93b41812b92a7f7b36a0
-  pos: {x: 42.000122, y: 1504}
-  blackboard:
-    maxDistance: 1
-    maxTime: 1
-    alive: 1
-    enemyType: 
-  agent: {fileID: 0}
-  description: Place Holder for AI behaviour
-  message: Ranged AI approach
 --- !u!114 &8426590380138215880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1117,7 +1115,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 7324f44ecdb97ef43b92d9f2d7bb7ae3
-  pos: {x: -107.999916, y: 1678.0002}
+  pos: {x: -118, y: 1631.08}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -1211,7 +1209,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 4e32a002417b00a4db7c2cc4ff36f13e
-  pos: {x: 1102, y: 1549}
+  pos: {x: 1095.0609, y: 1466.0002}
   blackboard:
     maxDistance: 1
     maxTime: 1

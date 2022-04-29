@@ -50,6 +50,7 @@ public class Patrol : ActionNode
 
             else
             {
+               
                 transform.position = Vector3.MoveTowards(transform.position, wp.position, agent.WalkSpeed + Time.deltaTime);
                 transform.LookAt(wp.position);
             }
