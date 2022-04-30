@@ -14,4 +14,7 @@ public class BlackBoard
     public bool alive = true;
     public string enemyType;
     public bool Aggro = false;
+
+    [Tooltip("Has the Animation change for Stage Change activated")]
+    public bool StateChanged = false;
 }

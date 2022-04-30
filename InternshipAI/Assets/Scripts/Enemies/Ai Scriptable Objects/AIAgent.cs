@@ -28,7 +28,8 @@ public class AIAgent : MonoBehaviour
     [HideInInspector] public Rigidbody[] rigidbodies;
     [HideInInspector] public AiSensor sensor;
     [HideInInspector] public AggroRange aggroRange;
-
+    [HideInInspector] public MeleeRange MsensorRange;
+    [HideInInspector] public RangedRange RsensorRange;
     //public variables
     public List<Transform> waypoints = new List<Transform>();
     [Tooltip("Navmesh for the AiAgent")]
@@ -64,6 +65,8 @@ public class AIAgent : MonoBehaviour
         rigidbodies = GetComponentsInChildren<Rigidbody>();
         sensor = GetComponent<AiSensor>();
         aggroRange = GetComponent<AggroRange>();
+        RsensorRange = GetComponent<RangedRange>();
+        MsensorRange = GetComponent<MeleeRange>();
         currentHealth = HealthMax;
         
         //make sure that on start all ragdolls are deactivated
