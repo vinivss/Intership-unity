@@ -13,4 +13,5 @@ public class BlackBoard
     public float maxTime = 1.0f;
     public bool alive = true;
     public string enemyType;
+    public bool Aggro = false;
 }

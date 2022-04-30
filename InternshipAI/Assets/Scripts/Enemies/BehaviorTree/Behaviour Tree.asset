@@ -17,8 +17,11 @@ MonoBehaviour:
   guid: 0603712ae61df2b498ef104e4de564bc
   pos: {x: -213, y: 309}
   blackboard:
-    moveToPosition: {x: 0, y: 0, z: 0}
-    moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+  agent: {fileID: 0}
   description: 
   message: 
 --- !u!114 &-3391321807907736512
@@ -38,8 +41,11 @@ MonoBehaviour:
   guid: f9344cc368cf3954ab9fe1b3e8486ebc
   pos: {x: -62.99997, y: 170.45}
   blackboard:
-    moveToPosition: {x: 0, y: 0, z: 0}
-    moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+  agent: {fileID: 0}
   description: 
   Children:
   - {fileID: -4689531158478059655}
@@ -65,8 +71,10 @@ MonoBehaviour:
   - {fileID: 5604283673151750873}
   treeState: 0
   blackboard:
-    moveToPosition: {x: 0, y: 0, z: 0}
-    moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
 --- !u!114 &5604283673151750873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,8 +92,11 @@ MonoBehaviour:
   guid: 18b131b8680aaa94f84dcf181db43b22
   pos: {x: 87, y: 427}
   blackboard:
-    moveToPosition: {x: 0, y: 0, z: 0}
-    moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+  agent: {fileID: 0}
   description: 
   message: 
 --- !u!114 &5833922270424401136
@@ -105,8 +116,11 @@ MonoBehaviour:
   guid: 529c5f1457830924fa310ed7483e42f7
   pos: {x: -46, y: 0}
   blackboard:
-    moveToPosition: {x: 0, y: 0, z: 0}
-    moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+  agent: {fileID: 0}
   description: 
   child: {fileID: -3391321807907736512}
 --- !u!114 &5836166695949460681
@@ -126,7 +140,10 @@ MonoBehaviour:
   guid: 7234e52c89c9b764b83b41d352ee0182
   pos: {x: 87, y: 309}
   blackboard:
-    moveToPosition: {x: 0, y: 0, z: 0}
-    moveToObject: {fileID: 0}
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+  agent: {fileID: 0}
   description: 
   child: {fileID: 5604283673151750873}

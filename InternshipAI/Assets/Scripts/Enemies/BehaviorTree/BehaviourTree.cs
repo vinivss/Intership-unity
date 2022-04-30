@@ -31,12 +31,14 @@ namespace AI
             Node node = ScriptableObject.CreateInstance(type) as Node;
             node.name = type.Name;
             node.guid = GUID.Generate().ToString();
+            
             Undo.RecordObject(this, "Behaviour Tree (Create Node)");
 
             nodeList.Add(node);
             if (!Application.isPlaying)
             {
                 AssetDatabase.AddObjectToAsset(node, this);
+                
             }
             Undo.RegisterCreatedObjectUndo(node, "Behaviour Tree (Create Node)");
             AssetDatabase.SaveAssets();

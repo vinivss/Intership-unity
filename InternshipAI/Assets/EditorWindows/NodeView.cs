@@ -11,17 +11,22 @@ public class NodeView : UnityEditor.Experimental.GraphView.Node
     public AI.Node node;
     public Port input;
     public Port output;
+    
     public NodeView(AI.Node node) :base("Assets/EditorWindows/NodeView.uxml")
     {
         this.node = node;
         this.title = node.name;
         this.viewDataKey = node.guid;
+
+        
+        
         style.left = node.pos.x;
         style.top = node.pos.y;
 
         CreateInputPorts();
         CreateOutputPorts();
         SetupClasses();
+        
         Label descriptionLabel = this.Q<Label>("description");
         descriptionLabel.bindingPath = "description";
         descriptionLabel.Bind(new SerializedObject(node));

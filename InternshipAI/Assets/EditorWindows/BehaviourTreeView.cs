@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine.UIElements;
@@ -7,6 +6,7 @@ using AI;
 using System;
 using System.Linq;
 using Node = AI.Node;
+using UnityEngine;
 //just making the Graph View appear on UI Builder
 public class BehaviourTreeView : GraphView
 {
@@ -158,7 +158,9 @@ public class BehaviourTreeView : GraphView
     {
         NodeView nodeView = new NodeView(node);
         nodeView.OnNodeSelected = OnNodeSelected;
+        
         AddElement(nodeView);
+       
     }
 
     public void UpdateNodeStates()

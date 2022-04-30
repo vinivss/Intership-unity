@@ -26,6 +26,8 @@ public class AIAgent : MonoBehaviour
     [HideInInspector] public List<GameObject> targetList = new List<GameObject>();
     [HideInInspector] public Animator animator;
     [HideInInspector] public Rigidbody[] rigidbodies;
+    [HideInInspector] public AiSensor sensor;
+    [HideInInspector] public AggroRange aggroRange;
 
     //public variables
     public List<Transform> waypoints = new List<Transform>();
@@ -36,7 +38,7 @@ public class AIAgent : MonoBehaviour
 
     //private variables
     GameObject thisGameObject;
-    [Tooltip("Range Check bounds for Melee")]
+    
     
 
 
@@ -60,6 +62,8 @@ public class AIAgent : MonoBehaviour
         navMesh = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
         rigidbodies = GetComponentsInChildren<Rigidbody>();
+        sensor = GetComponent<AiSensor>();
+        aggroRange = GetComponent<AggroRange>();
         currentHealth = HealthMax;
         
         //make sure that on start all ragdolls are deactivated

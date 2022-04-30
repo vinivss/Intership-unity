@@ -24,7 +24,7 @@ namespace AI
         //having a randomized GUI id
        [HideInInspector] public string guid;
         // position in the GUI
-       [HideInInspector] public Vector2 pos;
+        [HideInInspector] public Vector2 pos;
         //pos of the black board
         [HideInInspector] public BlackBoard blackboard;
         //ai agent

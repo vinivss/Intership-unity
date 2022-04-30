@@ -17,11 +17,10 @@ MonoBehaviour:
   guid: d85d053f84af5524fa39092f44181036
   pos: {x: -154.99995, y: 307.50006}
   blackboard:
-    moveToPosition: {x: 0, y: 0, z: 0}
-    moveToObject: {fileID: 0}
     maxDistance: 1
     maxTime: 1
     alive: 1
+    enemyType: 
   agent: {fileID: 0}
   description: 
   Children:
@@ -44,11 +43,10 @@ MonoBehaviour:
   guid: 3b9a59b2259812f448a496cafdce7313
   pos: {x: 80.60004, y: 281.85004}
   blackboard:
-    moveToPosition: {x: 0, y: 0, z: 0}
-    moveToObject: {fileID: 0}
     maxDistance: 1
     maxTime: 1
     alive: 1
+    enemyType: 
   agent: {fileID: 0}
   description: 
 --- !u!114 &-6776566105039241783
@@ -68,11 +66,10 @@ MonoBehaviour:
   guid: 035a64de2f59f3041ad793b6f743f3a3
   pos: {x: -43, y: 5}
   blackboard:
-    moveToPosition: {x: 0, y: 0, z: 0}
-    moveToObject: {fileID: 0}
     maxDistance: 1
     maxTime: 1
     alive: 1
+    enemyType: 
   agent: {fileID: 0}
   description: 
   child: {fileID: -1858400963579641218}
@@ -93,11 +90,10 @@ MonoBehaviour:
   guid: 2b8f14f89bee3e841b3598953f0283b9
   pos: {x: -52, y: -119}
   blackboard:
-    moveToPosition: {x: 0, y: 0, z: 0}
-    moveToObject: {fileID: 0}
     maxDistance: 1
     maxTime: 1
     alive: 1
+    enemyType: 
   agent: {fileID: 0}
   description: 
   child: {fileID: -6776566105039241783}
@@ -118,11 +114,10 @@ MonoBehaviour:
   guid: 131485f8fcc317b44a7216ab8cbcbbea
   pos: {x: -43.000057, y: 130.00003}
   blackboard:
-    moveToPosition: {x: 0, y: 0, z: 0}
-    moveToObject: {fileID: 0}
     maxDistance: 1
     maxTime: 1
     alive: 1
+    enemyType: 
   agent: {fileID: 0}
   description: 
   Children:
@@ -151,11 +146,10 @@ MonoBehaviour:
   - {fileID: -6776566105039241783}
   treeState: 0
   blackboard:
-    moveToPosition: {x: 0, y: 0, z: 0}
-    moveToObject: {fileID: 0}
     maxDistance: 1
     maxTime: 1
     alive: 1
+    enemyType: 
 --- !u!114 &2881943145581200082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,11 +167,10 @@ MonoBehaviour:
   guid: be81d36537850a8428c1ede1d2d90e24
   pos: {x: -43, y: 459}
   blackboard:
-    moveToPosition: {x: 0, y: 0, z: 0}
-    moveToObject: {fileID: 0}
     maxDistance: 1
     maxTime: 1
     alive: 1
+    enemyType: 
   agent: {fileID: 0}
   description: 
 --- !u!114 &3726844821979488390
@@ -197,10 +190,9 @@ MonoBehaviour:
   guid: ea7d81c77a8a4b34daf9ac222549f7a9
   pos: {x: -230, y: 459}
   blackboard:
-    moveToPosition: {x: 0, y: 0, z: 0}
-    moveToObject: {fileID: 0}
     maxDistance: 1
     maxTime: 1
     alive: 1
+    enemyType: 
   agent: {fileID: 0}
   description: 

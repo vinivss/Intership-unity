@@ -33,35 +33,36 @@ public class BehaviourTreeEditor : EditorWindow
     }
     public void CreateGUI()
     {
+        
         // Each editor window contains a root VisualElement object
         VisualElement root = rootVisualElement;
 
-       
 
-        // Import UXML
-        var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/EditorWindows/BehaviourTreeEditor.uxml");
-        visualTree.CloneTree(root);
-        
+            // Import UXML
+            var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/EditorWindows/BehaviourTreeEditor.uxml");
+            visualTree.CloneTree(root);
 
-        // A stylesheet can be added to a VisualElement.
-        // The style will be applied to the VisualElement and all of its children.
-        var styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/EditorWindows/BehaviourTreeEditor.uss");
- 
-        root.styleSheets.Add(styleSheet);
-        treeView = root.Q<BehaviourTreeView>();
-        inspectorView = root.Q<InspectorView>();
-        blackboardView = root.Q<IMGUIContainer>();
-        blackboardView.onGUIHandler = () =>
-        {
+
+            // A stylesheet can be added to a VisualElement.
+            // The style will be applied to the VisualElement and all of its children.
+            var styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/EditorWindows/BehaviourTreeEditor.uss");
+
+            root.styleSheets.Add(styleSheet);
+            treeView = root.Q<BehaviourTreeView>();
+            inspectorView = root.Q<InspectorView>();
+            blackboardView = root.Q<IMGUIContainer>();
+            blackboardView.onGUIHandler = () =>
+            {
             //if (treeObject != null)
             //{
-            treeObject.Update();
+                treeObject.Update();
             //}
             EditorGUILayout.PropertyField(blackboardProperty);
-            treeObject.ApplyModifiedProperties();
-        };
-        treeView.OnNodeSelected = onNodeSelectionChanged;
-        OnSelectionChange();
+                treeObject.ApplyModifiedProperties();
+            };
+            treeView.OnNodeSelected = onNodeSelectionChanged;
+            OnSelectionChange();
+        
     }
     private void OnEnable()
     {

@@ -15,12 +15,13 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: b09ab587dff877b43aeb78129002baf0
-  pos: {x: -387, y: 548}
+  pos: {x: -1052.0056, y: 454.00394}
   blackboard:
     maxDistance: 1
     maxTime: 1
     alive: 1
     enemyType: 
+    Aggro: 0
   agent: {fileID: 0}
   description: 
 --- !u!114 &-8369645940392257876
@@ -38,14 +39,66 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 2bfeaeda22f29bf4899db8222a21275e
-  pos: {x: -176, y: 712}
+  pos: {x: -722.0056, y: 607.00397}
   blackboard:
     maxDistance: 1
     maxTime: 1
     alive: 1
     enemyType: 
+    Aggro: 0
   agent: {fileID: 0}
   description: 
+--- !u!114 &-7158048098851648316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1e9100dfd63c944c9ca4e428df843e1, type: 3}
+  m_Name: CheckAggro
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: c83986dd58cafca4d8435948ac0724bb
+  pos: {x: -57.872505, y: 764.5}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-6513188926901784247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b41a703ddda7a44a1857a2964708b7, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: ebefcfbd55190fb47a168c7c4f0334de
+  pos: {x: 17.127462, y: 630.5}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+  agent: {fileID: 0}
+  description: if aggro is true behaviour
+  Children:
+  - {fileID: -7158048098851648316}
+  - {fileID: 5294686548524827353}
 --- !u!114 &-5060222483365506896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,17 +114,42 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 94a5a018ca3062247b52eee77af014cf
-  pos: {x: -236.99998, y: 548.00006}
+  pos: {x: -785.0056, y: 454.00394}
   blackboard:
     maxDistance: 1
     maxTime: 1
     alive: 1
     enemyType: 
+    Aggro: 0
   agent: {fileID: 0}
   description: 
   Children:
   - {fileID: -841899723929548514}
   - {fileID: -8369645940392257876}
+--- !u!114 &-1612665212174464511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49fb3336f5d421b4abd0cb8f4011b624, type: 3}
+  m_Name: SetAgro
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: b534ad90136920941b65f9b9043c52e9
+  pos: {x: -252.4823, y: 605.78876}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+  agent: {fileID: 0}
+  description: 
 --- !u!114 &-841899723929548514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,12 +165,13 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: bd1c696173f3210408c819e2a7be49e0
-  pos: {x: -326, y: 712}
+  pos: {x: -889.0056, y: 644.0039}
   blackboard:
     maxDistance: 1
     maxTime: 1
     alive: 1
     enemyType: 
+    Aggro: 0
   agent: {fileID: 0}
   description: 
 --- !u!114 &-603796230817218410
@@ -110,15 +189,18 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 72d4dbd2d70fac74b9712eccee0da4b8
-  pos: {x: 273.1794, y: 548.00006}
+  pos: {x: 0, y: 313}
   blackboard:
     maxDistance: 1
     maxTime: 1
     alive: 1
     enemyType: 
+    Aggro: 0
   agent: {fileID: 0}
   description: 
-  Children: []
+  Children:
+  - {fileID: 8313706715353801485}
+  - {fileID: -6513188926901784247}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,12 +224,19 @@ MonoBehaviour:
   - {fileID: -5060222483365506896}
   - {fileID: -841899723929548514}
   - {fileID: -8369645940392257876}
+  - {fileID: 8313706715353801485}
+  - {fileID: -1612665212174464511}
+  - {fileID: 2261535585439050371}
+  - {fileID: -6513188926901784247}
+  - {fileID: -7158048098851648316}
+  - {fileID: 5294686548524827353}
   treeState: 0
   blackboard:
     maxDistance: 1
     maxTime: 1
     alive: 1
     enemyType: 
+    Aggro: 0
 --- !u!114 &1108913727718599478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,17 +252,42 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: cd53afd6511fef741affd3c447e2eb06
-  pos: {x: -162.0325, y: 278}
+  pos: {x: 0.00000667572, y: 146.7796}
   blackboard:
     maxDistance: 1
     maxTime: 1
     alive: 1
     enemyType: 
+    Aggro: 0
   agent: {fileID: 0}
   description: 
   Children:
   - {fileID: 5531144545325551657}
   - {fileID: -603796230817218410}
+--- !u!114 &2261535585439050371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f79ea17ba91d6f41ae6fd1b4a79dbd5, type: 3}
+  m_Name: CheckPlayerInSensor
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 3923d0941b4ddca499eb09a61a570812
+  pos: {x: -472.48227, y: 605.78876}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+  agent: {fileID: 0}
+  description: 
 --- !u!114 &3839102905973728574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,15 +303,41 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: e382fd073534fb04d8ad4d0293753f03
-  pos: {x: 0, y: 141}
+  pos: {x: 0.00000667572, y: 22.414993}
   blackboard:
     maxDistance: 1
     maxTime: 1
     alive: 1
     enemyType: 
+    Aggro: 0
   agent: {fileID: 0}
   description: 
   child: {fileID: 1108913727718599478}
+--- !u!114 &5294686548524827353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4224d0b66cbe863428df579aee3384bf, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 734dfbf3214a1c44a82178f98bff1792
+  pos: {x: 121.12747, y: 837.5}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+  agent: {fileID: 0}
+  description: 
+  Children: []
 --- !u!114 &5531144545325551657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,12 +353,13 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 4d1286af41981c14a995805a0a7fa564
-  pos: {x: -312, y: 405}
+  pos: {x: -785.0056, y: 291.00397}
   blackboard:
     maxDistance: 1
     maxTime: 1
     alive: 1
     enemyType: 
+    Aggro: 0
   agent: {fileID: 0}
   description: 
   Children:
@@ -239,12 +380,40 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 03ea3f33fca5b6141b6c658a406be03c
-  pos: {x: 0, y: 0}
+  pos: {x: 0.00000667572, y: -100.584984}
   blackboard:
     maxDistance: 1
     maxTime: 1
     alive: 1
     enemyType: 
+    Aggro: 0
   agent: {fileID: 0}
   description: 
   child: {fileID: 3839102905973728574}
+--- !u!114 &8313706715353801485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b41a703ddda7a44a1857a2964708b7, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 67b800f25e0d024489fcd5a5a2267e41
+  pos: {x: -339.48227, y: 445.7887}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+  agent: {fileID: 0}
+  description: Checkes for range and if within sight range sets Aggro to true
+  Children:
+  - {fileID: 2261535585439050371}
+  - {fileID: -1612665212174464511}
