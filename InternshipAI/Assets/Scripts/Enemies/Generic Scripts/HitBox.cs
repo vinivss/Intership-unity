@@ -9,6 +9,10 @@ public class HitBox : MonoBehaviour
     public AIAgent agent;
     Ragdoll ragdoll;
 
+    public void Start()
+    {
+        agent = GetComponentInParent<AIAgent>();
+    }
     public void OnHit(float damage)
     {
         agent.TakeDamage(damage);

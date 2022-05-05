@@ -4,7 +4,7 @@ using UnityEngine;
 using AI;
 public class RunAwayfromPlayer : ActionNode
 {
-    public float RunAwayDist = 400.0f;
+    public float RunAwayDist = 10.0f;
     protected override void OnStart()
     {
        
@@ -17,16 +17,17 @@ public class RunAwayfromPlayer : ActionNode
 
     protected override State OnUpdate()
     {
-        float dist = Vector3.Distance(agent.transform.position, agent.targetList[0].transform.position);
+        Vector3 playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
+        float dist = Vector3.Distance(agent.transform.position, playerPos);
 
         Debug.Log(dist);
         Debug.Log(RunAwayDist);
-        Debug.Log(dist < RunAwayDist);
+        Debug.Log(dist < RunAwayDist); 
 
         if (dist < RunAwayDist)
         {
             Debug.Log("Run away");
-            Vector3 dirToPlayer = agent.transform.position - agent.targetList[0].transform.position;
+            Vector3 dirToPlayer = agent.transform.position - playerPos;
 
             Vector3 newPos = agent.transform.position + dirToPlayer;
             agent.navMesh.SetDestination(newPos);

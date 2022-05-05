@@ -4,6 +4,8 @@ using UnityEngine;
 using AI;
 public class SetAgro : ActionNode
 {
+    [Tooltip("The value you want to set aggro to")]
+    public bool SetValue = true;
     protected override void OnStart()
     {
        
@@ -16,7 +18,7 @@ public class SetAgro : ActionNode
 
     protected override State OnUpdate()
     {
-        blackboard.Aggro = true;
+        blackboard.Aggro = SetValue;
         return State.SUCCESS;
     }
 }

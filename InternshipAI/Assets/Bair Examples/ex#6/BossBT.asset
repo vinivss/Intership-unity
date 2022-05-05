@@ -15,7 +15,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 054fef6375eaaf84a9115ac7b8f85b9a
-  pos: {x: 1083.55, y: 2024.9503}
+  pos: {x: 956.6432, y: 1967.0002}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -25,6 +25,57 @@ MonoBehaviour:
     StateChanged: 0
   agent: {fileID: 0}
   description: 
+--- !u!114 &-9207732565906356745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bba7a9b6b09ece74d9562e9e6cf06ba6, type: 3}
+  m_Name: DeactivateFlames
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 345949041e749f1439dab7ee31163a14
+  pos: {x: 1507, y: 2315}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-9009848305719899581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ef38c529fcf7be43a616b88c61ee79f, type: 3}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 030e6acfd09ccd64e8f5846830376b02
+  pos: {x: 6879.001, y: 2839.6516}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  message: Swipe
 --- !u!114 &-8780729430068825424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40,7 +91,58 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: b09ab587dff877b43aeb78129002baf0
-  pos: {x: -1052.0056, y: 454.00394}
+  pos: {x: -1362.7876, y: 466.99997}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-8606054699779268084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2385cfbae820d444851e81a45de6019, type: 3}
+  m_Name: IfFalse
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 44c7160f437295e4bb37bc1f60d17d64
+  pos: {x: 328.64297, y: 1980}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: 6396289147454004292}
+--- !u!114 &-8592816925174831672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d869659483494fb4782da9e3d469be1a, type: 3}
+  m_Name: StopMovement
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 5aefe5264735f714f9c72f837847e4cf
+  pos: {x: 743.6431, y: 2315}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -65,7 +167,137 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 2bfeaeda22f29bf4899db8222a21275e
-  pos: {x: -722.0056, y: 607.00397}
+  pos: {x: -1184, y: 641}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-8350070729875191840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4224d0b66cbe863428df579aee3384bf, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 327c109c3174c5d409abb2536f9d749c
+  pos: {x: 4775, y: 2003}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  Children:
+  - {fileID: -4289336156138582299}
+  - {fileID: -1681705335951550533}
+  - {fileID: 2183577567757530703}
+--- !u!114 &-8231087131597774849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ba84641881070408a2c359d21b673f, type: 3}
+  m_Name: SetHealthToMax
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: c7a4c31b9b6939244acd1b8e10f4e35a
+  pos: {x: 4173, y: 1331}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-8206822552752112187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2385cfbae820d444851e81a45de6019, type: 3}
+  m_Name: IfFalse
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 784f1dba5847b1242b0ba2844d17935d
+  pos: {x: 1102.643, y: 1353}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: -4170591072848142114}
+--- !u!114 &-8171798561991352942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cef7af76457eb0c48a3b18e55d096c1e, type: 3}
+  m_Name: FireBreath
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 8cd1bd710c74f27469749cbb4f741eb5
+  pos: {x: 6109.001, y: 2857.6519}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-7773440322307994818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bba7a9b6b09ece74d9562e9e6cf06ba6, type: 3}
+  m_Name: DeactivateFlames
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 4af1094127d897e46ae4b854dfd546b9
+  pos: {x: 6419.001, y: 2857.6519}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -90,7 +322,58 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 171965fef581a64429635d0f0282e383
-  pos: {x: 1711, y: 938}
+  pos: {x: 2877.086, y: 1024.5001}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-7597425455162099019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddaf5ebdc4d15c746b7f4d76f8a21ba8, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: bdf6bdedb1e04724fb5ce23b900f7391
+  pos: {x: 1058.0002, y: 2315}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  waitTime: 1
+--- !u!114 &-7581382445085304883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f39dd317fd8419b43b6cfb3bf6700387, type: 3}
+  m_Name: RangedSensorCheck
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 610b725feb3f25d41883d4ba3084de51
+  pos: {x: 2449, y: 1972}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -115,7 +398,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 0b44cae98b5b21b409dd92feee03e181
-  pos: {x: 1629, y: 481}
+  pos: {x: 2795.086, y: 567.50006}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -143,7 +426,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: c83986dd58cafca4d8435948ac0724bb
-  pos: {x: 119.00007, y: 1084}
+  pos: {x: 511.64307, y: 1286}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -153,6 +436,65 @@ MonoBehaviour:
     StateChanged: 0
   agent: {fileID: 0}
   description: 
+--- !u!114 &-7095870556175078017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b41a703ddda7a44a1857a2964708b7, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 494fc4fd628331044904b5a6987b14d7
+  pos: {x: 832.64307, y: 2089.0002}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  Children:
+  - {fileID: 1885382467571431223}
+  - {fileID: -8592816925174831672}
+  - {fileID: 8017749303995266853}
+  - {fileID: -7597425455162099019}
+  - {fileID: -3630091861591056817}
+  - {fileID: -5882563637443659577}
+  - {fileID: -9207732565906356745}
+--- !u!114 &-6971899822926369929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddaf5ebdc4d15c746b7f4d76f8a21ba8, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: be8d3dd9675b75540923c7c1a228f966
+  pos: {x: 5941.001, y: 2858.6519}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  waitTime: 2
 --- !u!114 &-6933042916071885730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,7 +510,33 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 1a63b60a0ad245c41897a90314470e7b
-  pos: {x: -80.000084, y: 809.8165}
+  pos: {x: 452.64304, y: 995.99994}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  Percentage: 50
+--- !u!114 &-6899399643943993080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46af2bfbf43caf84d971e03354474ae5, type: 3}
+  m_Name: MeleeSensorCheck
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 49f5873b09f6dab46b2ebb4066bcd3bd
+  pos: {x: 3116, y: 1982}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -193,7 +561,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: ebefcfbd55190fb47a168c7c4f0334de
-  pos: {x: 203.00002, y: 949.00006}
+  pos: {x: 735.64307, y: 1135}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -204,8 +572,138 @@ MonoBehaviour:
   agent: {fileID: 0}
   description: if aggro is true behaviour
   Children:
+  - {fileID: -3539398602074467264}
   - {fileID: -7158048098851648316}
   - {fileID: 5294686548524827353}
+--- !u!114 &-6491140160718737006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ef38c529fcf7be43a616b88c61ee79f, type: 3}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 882a110f9d8d3b140ac22297e74c18f5
+  pos: {x: 5341.001, y: 2858.6519}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  message: Strong To fire
+--- !u!114 &-6177139587331414347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d869659483494fb4782da9e3d469be1a, type: 3}
+  m_Name: StopMovement
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 75dc78ff316743d458a269419b462d46
+  pos: {x: 3465.0005, y: 2298}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-6068802747015865526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2385cfbae820d444851e81a45de6019, type: 3}
+  m_Name: IfFalse
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: b1278b3acb7fb1f4b9ee8041e29795fc
+  pos: {x: 2449, y: 1808}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: -7581382445085304883}
+--- !u!114 &-5882563637443659577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddaf5ebdc4d15c746b7f4d76f8a21ba8, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 7e4485cb500ec204eb94efeccdd016be
+  pos: {x: 1357, y: 2315}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  waitTime: 5
+--- !u!114 &-5822021612800129602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddaf5ebdc4d15c746b7f4d76f8a21ba8, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: c7dfa6157fe9374479d2c10c0fdf0bf4
+  pos: {x: 5641.001, y: 2858.6519}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  waitTime: 2
 --- !u!114 &-5798287717075925944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,7 +719,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 40a4b66fda883d84786253e7b27f8537
-  pos: {x: -0.0000824625, y: 647.81647}
+  pos: {x: 532.643, y: 833.99994}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -249,7 +747,88 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 631faa5d48068254fa95cce3ec2d12bc
-  pos: {x: -405.51248, y: 1982.0002}
+  pos: {x: -483.35696, y: 2168}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-5610622090912627642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b41a703ddda7a44a1857a2964708b7, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 3b368e7b0f8372048a12d77ef5eeb46f
+  pos: {x: 3602, y: 1035}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  Children:
+  - {fileID: -2532931858015581500}
+  - {fileID: -4184929569611948632}
+  - {fileID: 8068047641050093558}
+  - {fileID: 2814344755602870997}
+--- !u!114 &-5587826479553081692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddaf5ebdc4d15c746b7f4d76f8a21ba8, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: f54d932ba27cddd4e97810721603a38c
+  pos: {x: 4606.001, y: 2861.6519}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  waitTime: 2
+--- !u!114 &-5448057987174715726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46af2bfbf43caf84d971e03354474ae5, type: 3}
+  m_Name: MeleeSensorCheck
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 1e28afa456cb6ae488219b8ed1442cf5
+  pos: {x: 585.5, y: 2523.7058}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -274,7 +853,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 94a5a018ca3062247b52eee77af014cf
-  pos: {x: -785.0056, y: 454.00394}
+  pos: {x: -1095.7876, y: 466.99997}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -285,8 +864,83 @@ MonoBehaviour:
   agent: {fileID: 0}
   description: 
   Children:
-  - {fileID: -841899723929548514}
   - {fileID: -8369645940392257876}
+  - {fileID: -841899723929548514}
+--- !u!114 &-5026672092674249160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2098959f8a9b700418cad0553fb408aa, type: 3}
+  m_Name: LookAtPlayer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 6422d259bd49269418fa8713e17d352d
+  pos: {x: 7029.001, y: 2839.6516}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-4659812230731314939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b719b3a2aec1a4a8d36e5d51bd790c, type: 3}
+  m_Name: StrongAttack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 8fcccf1b183403f4da0309385ad09e6e
+  pos: {x: 4775.001, y: 2861.6519}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-4585241980280425119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2098959f8a9b700418cad0553fb408aa, type: 3}
+  m_Name: LookAtPlayer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: ab0f3db528339744a915fcdce2357828
+  pos: {x: 2805.585, y: 1971}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
 --- !u!114 &-4551182474621199470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,7 +956,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: b2e4069199ac6f148bbb04c91eb03a7a
-  pos: {x: 2441.6802, y: 919.5}
+  pos: {x: 3342.086, y: 1013.5001}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -312,7 +966,84 @@ MonoBehaviour:
     StateChanged: 0
   agent: {fileID: 0}
   description: 
-  child: {fileID: -1460992804338475349}
+  child: {fileID: -228387663384779533}
+--- !u!114 &-4412472438446363117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f39dd317fd8419b43b6cfb3bf6700387, type: 3}
+  m_Name: RangedSensorCheck
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: bb60a5d62cbc90445bd9b6f914a49a50
+  pos: {x: 3294, y: 1843}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-4289336156138582299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c35bbdf5706ca241a6ee4e44b0e3a6f, type: 3}
+  m_Name: RandomChance
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 627d4608503c4cd48a3a13011822d0f7
+  pos: {x: 4775.001, y: 2506.6516}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: 6446206875026532773}
+  PassRange: 0.05
+--- !u!114 &-4279911399105620215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196fef255d8668549aa8405c0d3e89ff, type: 3}
+  m_Name: LeftSwipe
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: c7fb5cb76cbcf7b46955cb91dd1ada4e
+  pos: {x: 5075.001, y: 2861.6519}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
 --- !u!114 &-4233285195304158290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,7 +1059,133 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 49c70a6b7b050744e999361b797e0b53
-  pos: {x: -227.51248, y: 1982.0002}
+  pos: {x: -305.3569, y: 2168}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-4184929569611948632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d869659483494fb4782da9e3d469be1a, type: 3}
+  m_Name: StopMovement
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 6d3a2c30047a65144b02e517bc915f35
+  pos: {x: 3510, y: 1400.0001}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-4170591072848142114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be6235ad8ae61d4aa87b7058a4d1a19, type: 3}
+  m_Name: CheckAggroRange
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: f0023248b39babf44acd0180e92cd93b
+  pos: {x: 1096.643, y: 1524}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-4022806851049450831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddaf5ebdc4d15c746b7f4d76f8a21ba8, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 238c21f4214480345857c0d12c77ae1e
+  pos: {x: 4925.001, y: 2861.6519}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  waitTime: 2
+--- !u!114 &-3630091861591056817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cef7af76457eb0c48a3b18e55d096c1e, type: 3}
+  m_Name: FireBreath
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: c36a3b65bcecb134db7a5417b497118e
+  pos: {x: 1211.4, y: 2315}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-3539398602074467264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be6235ad8ae61d4aa87b7058a4d1a19, type: 3}
+  m_Name: CheckAggroRange
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 1e431e6be2f62e542b0e49630cf83b70
+  pos: {x: 328.64297, y: 1286}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -353,7 +1210,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 5bb77e92a9ad6474c859c30643ebd594
-  pos: {x: 447.85, y: 1902.8503}
+  pos: {x: 490.64313, y: 2028}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -363,7 +1220,7 @@ MonoBehaviour:
     StateChanged: 0
   agent: {fileID: 0}
   description: 
---- !u!114 &-2222204338189276311
+--- !u!114 &-3106801245392577621
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -372,13 +1229,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2385cfbae820d444851e81a45de6019, type: 3}
-  m_Name: IfFalse
+  m_Script: {fileID: 11500000, guid: 8be6235ad8ae61d4aa87b7058a4d1a19, type: 3}
+  m_Name: CheckAggroRange
   m_EditorClassIdentifier: 
   state: 0
   started: 0
-  guid: 184b68c6a30c3324ea4bc4131f473582
-  pos: {x: 458, y: 1100}
+  guid: f493d5985df90c44f9144e408e46f62b
+  pos: {x: 2707, y: 1025}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -388,7 +1245,137 @@ MonoBehaviour:
     StateChanged: 0
   agent: {fileID: 0}
   description: 
-  child: {fileID: 7740063866389838984}
+--- !u!114 &-3039848793316941761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b41a703ddda7a44a1857a2964708b7, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: feb463bdc9985ed4fbff2da458f564af
+  pos: {x: 2652.48, y: 1760}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  Children:
+  - {fileID: 1547195005326109753}
+  - {fileID: -4585241980280425119}
+  - {fileID: -2971236893824119007}
+--- !u!114 &-2971236893824119007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee25398d9b4a8d4fb6c24c857a70b78, type: 3}
+  m_Name: JumpAttack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 4ce97f50e1b25314eb64074a3ba129b2
+  pos: {x: 2955.585, y: 1972}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-2532931858015581500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddaf5ebdc4d15c746b7f4d76f8a21ba8, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 563f46dc4704f0140b594a8b09b22ef7
+  pos: {x: 3348, y: 1331}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  waitTime: 3
+--- !u!114 &-2321218790237107133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf94522d325dd8d48a6c3aa9ad9eeff0, type: 3}
+  m_Name: SetAISize
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 8f48f82ecacf88847bc58af829b8004c
+  pos: {x: 151.99995, y: 822}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  Multiplier: 3
+--- !u!114 &-2292030655542705518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bba7a9b6b09ece74d9562e9e6cf06ba6, type: 3}
+  m_Name: DeactivateFlames
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 7e4350da8209d2c4f8388618a36cf985
+  pos: {x: 4065.0005, y: 2301}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
 --- !u!114 &-1927466530192934169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,7 +1391,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: f9994823596061648a00b5197ccbb093
-  pos: {x: 1166.55, y: 1825.9503}
+  pos: {x: 1085.6431, y: 1735}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -416,6 +1403,61 @@ MonoBehaviour:
   description: If in melee
   Children:
   - {fileID: -9216143675267299245}
+  - {fileID: 4589291714785731914}
+  - {fileID: 1626590053097362151}
+--- !u!114 &-1741064319154384222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ef38c529fcf7be43a616b88c61ee79f, type: 3}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 032cfd0a58289504f95b6059099df5f1
+  pos: {x: 668.64307, y: 2028}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  message: In Ranged
+--- !u!114 &-1681705335951550533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c35bbdf5706ca241a6ee4e44b0e3a6f, type: 3}
+  m_Name: RandomChance
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: b1822a31c34504740841456ef79cd4ee
+  pos: {x: 5716.001, y: 2387.6516}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: 2049153784329806978}
+  PassRange: 0.3
 --- !u!114 &-1612665212174464511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,7 +1473,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: b534ad90136920941b65f9b9043c52e9
-  pos: {x: -192, y: 607}
+  pos: {x: -534.985, y: 568}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -441,7 +1483,8 @@ MonoBehaviour:
     StateChanged: 0
   agent: {fileID: 0}
   description: 
---- !u!114 &-1460992804338475349
+  SetValue: 1
+--- !u!114 &-1412107791820295062
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -450,13 +1493,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1e9100dfd63c944c9ca4e428df843e1, type: 3}
-  m_Name: CheckAggro
+  m_Script: {fileID: 11500000, guid: d88de9b6c9996724bbc6b05cab805537, type: 3}
+  m_Name: RunAwayfromPlayer
   m_EditorClassIdentifier: 
   state: 0
   started: 0
-  guid: 16bea11904c82b14685a18b0f5291d21
-  pos: {x: 2441.6802, y: 1082.5}
+  guid: 3defc544e7fb2e74381c19828f9d09b6
+  pos: {x: 1603, y: 2122}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -466,6 +1509,83 @@ MonoBehaviour:
     StateChanged: 0
   agent: {fileID: 0}
   description: 
+  RunAwayDist: 10
+--- !u!114 &-1283004917534460341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b6e3c2000875e40a45f6c105105997, type: 3}
+  m_Name: CheckStateChange
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 67ccb804b63c0154ea1c3f45c1ca7d9b
+  pos: {x: -210.12994, y: 968.49994}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-1251104307441446438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54b11a67fa09b21499687ca9f6d58611, type: 3}
+  m_Name: GoToTargetNavmesh
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: b37f618181bfe884bb7a13de2d9a1611
+  pos: {x: 3283, y: 2212.5}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-914674678131103053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddaf5ebdc4d15c746b7f4d76f8a21ba8, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 3b4eaa3a94b328b4896ae786755a36a5
+  pos: {x: 7179.001, y: 2839.6516}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  waitTime: 2
 --- !u!114 &-841899723929548514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -481,7 +1601,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: bd1c696173f3210408c819e2a7be49e0
-  pos: {x: -889.0056, y: 644.0039}
+  pos: {x: -1034.0726, y: 641}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -491,35 +1611,6 @@ MonoBehaviour:
     StateChanged: 0
   agent: {fileID: 0}
   description: 
---- !u!114 &-660188746259777929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4224d0b66cbe863428df579aee3384bf, type: 3}
-  m_Name: SelectorNode
-  m_EditorClassIdentifier: 
-  state: 0
-  started: 0
-  guid: 9d6634c06ca9ba74bbd73f9c61fe0426
-  pos: {x: 641, y: 1197}
-  blackboard:
-    maxDistance: 1
-    maxTime: 1
-    alive: 1
-    enemyType: 
-    Aggro: 0
-    StateChanged: 0
-  agent: {fileID: 0}
-  description: 
-  Children:
-  - {fileID: 8679192119962473200}
-  - {fileID: -394240751118516711}
-  - {fileID: -1927466530192934169}
 --- !u!114 &-603796230817218410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -535,7 +1626,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 72d4dbd2d70fac74b9712eccee0da4b8
-  pos: {x: -0.000005722046, y: 303.80008}
+  pos: {x: -0.000014305115, y: 304}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -547,6 +1638,7 @@ MonoBehaviour:
   description: 
   Children:
   - {fileID: 8313706715353801485}
+  - {fileID: 5749882080284939206}
   - {fileID: -5798287717075925944}
   - {fileID: -7181163680190332343}
 --- !u!114 &-394240751118516711
@@ -564,7 +1656,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 3a9584c5486ad464fa755ffe9455d175
-  pos: {x: 602.85, y: 1703.8503}
+  pos: {x: 603.643, y: 1735}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -575,7 +1667,60 @@ MonoBehaviour:
   agent: {fileID: 0}
   description: In Ranged but not melee
   Children:
+  - {fileID: -8606054699779268084}
   - {fileID: -3410391823290333645}
+  - {fileID: -1741064319154384222}
+  - {fileID: -7095870556175078017}
+--- !u!114 &-338500959226532756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2098959f8a9b700418cad0553fb408aa, type: 3}
+  m_Name: LookAtPlayer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 229401009b86c1d49a41802ad5c0b9e1
+  pos: {x: 4456.001, y: 2861.6519}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-228387663384779533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be6235ad8ae61d4aa87b7058a4d1a19, type: 3}
+  m_Name: CheckAggroRange
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: c483976d3e4c7464c9816a01074ae7d4
+  pos: {x: 3336.086, y: 1163.5}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -592,7 +1737,6 @@ MonoBehaviour:
   nodeList:
   - {fileID: 7925547772537143493}
   - {fileID: 3839102905973728574}
-  - {fileID: 1108913727718599478}
   - {fileID: -603796230817218410}
   - {fileID: -8780729430068825424}
   - {fileID: 5531144545325551657}
@@ -613,17 +1757,12 @@ MonoBehaviour:
   - {fileID: 6406372772664375537}
   - {fileID: 6340653992450906270}
   - {fileID: 2293393063139656270}
-  - {fileID: -2222204338189276311}
-  - {fileID: 7740063866389838984}
   - {fileID: 2675069920516789121}
-  - {fileID: -660188746259777929}
   - {fileID: 5652354911544890905}
   - {fileID: 7903019486440400001}
   - {fileID: 3400627203022324360}
   - {fileID: -7618335864131896398}
   - {fileID: -4551182474621199470}
-  - {fileID: -1460992804338475349}
-  - {fileID: 703890808667072982}
   - {fileID: 787185950245649074}
   - {fileID: 8679192119962473200}
   - {fileID: -394240751118516711}
@@ -634,6 +1773,103 @@ MonoBehaviour:
   - {fileID: -5611475698406741244}
   - {fileID: -3410391823290333645}
   - {fileID: -9216143675267299245}
+  - {fileID: 5749882080284939206}
+  - {fileID: 1007890180176761832}
+  - {fileID: 6546131261061013938}
+  - {fileID: 6567111292157181399}
+  - {fileID: 8670430572178158798}
+  - {fileID: 5993383060687287357}
+  - {fileID: -1283004917534460341}
+  - {fileID: 4905593866224114176}
+  - {fileID: 2440844423665235078}
+  - {fileID: -3539398602074467264}
+  - {fileID: -4170591072848142114}
+  - {fileID: -8206822552752112187}
+  - {fileID: 7172114338206935061}
+  - {fileID: 8314306170742935679}
+  - {fileID: 651827035251994276}
+  - {fileID: 4589291714785731914}
+  - {fileID: -1741064319154384222}
+  - {fileID: -8606054699779268084}
+  - {fileID: 6396289147454004292}
+  - {fileID: 1626590053097362151}
+  - {fileID: 2111251392865923556}
+  - {fileID: -1412107791820295062}
+  - {fileID: 524519917109930429}
+  - {fileID: -7095870556175078017}
+  - {fileID: -8592816925174831672}
+  - {fileID: -3630091861591056817}
+  - {fileID: 7966439327206844176}
+  - {fileID: 8017749303995266853}
+  - {fileID: 9102441754906820836}
+  - {fileID: 1885382467571431223}
+  - {fileID: -5448057987174715726}
+  - {fileID: -2532931858015581500}
+  - {fileID: -5610622090912627642}
+  - {fileID: 2814344755602870997}
+  - {fileID: -4184929569611948632}
+  - {fileID: 55202703900231749}
+  - {fileID: -8231087131597774849}
+  - {fileID: 8068047641050093558}
+  - {fileID: -228387663384779533}
+  - {fileID: 3123232159862440923}
+  - {fileID: -6068802747015865526}
+  - {fileID: 4206956112337361282}
+  - {fileID: 5614837175192473567}
+  - {fileID: 7716166589328344941}
+  - {fileID: 5059671215019062632}
+  - {fileID: -7581382445085304883}
+  - {fileID: -2321218790237107133}
+  - {fileID: 1881612826547762646}
+  - {fileID: -2971236893824119007}
+  - {fileID: -3106801245392577621}
+  - {fileID: -4585241980280425119}
+  - {fileID: -3039848793316941761}
+  - {fileID: -1251104307441446438}
+  - {fileID: 1547195005326109753}
+  - {fileID: 2884320343666670479}
+  - {fileID: -6899399643943993080}
+  - {fileID: -4412472438446363117}
+  - {fileID: 4755577567766142452}
+  - {fileID: -6177139587331414347}
+  - {fileID: 1468342710698947021}
+  - {fileID: 1973213817571911571}
+  - {fileID: 8485614370734495338}
+  - {fileID: 3264319541280066404}
+  - {fileID: 1030091572542746768}
+  - {fileID: 6098134163911483283}
+  - {fileID: -8350070729875191840}
+  - {fileID: -1681705335951550533}
+  - {fileID: 2183577567757530703}
+  - {fileID: 2049153784329806978}
+  - {fileID: 8720413668022736403}
+  - {fileID: -5026672092674249160}
+  - {fileID: 5862027262056689397}
+  - {fileID: -914674678131103053}
+  - {fileID: -4289336156138582299}
+  - {fileID: 6446206875026532773}
+  - {fileID: 687963411882935093}
+  - {fileID: -338500959226532756}
+  - {fileID: -4022806851049450831}
+  - {fileID: -5587826479553081692}
+  - {fileID: 2810874664767306079}
+  - {fileID: -6971899822926369929}
+  - {fileID: -5822021612800129602}
+  - {fileID: -8171798561991352942}
+  - {fileID: 3657247544410297952}
+  - {fileID: -6491140160718737006}
+  - {fileID: -9009848305719899581}
+  - {fileID: 4990192312986156242}
+  - {fileID: -4659812230731314939}
+  - {fileID: -4279911399105620215}
+  - {fileID: -7597425455162099019}
+  - {fileID: 1414836842255100654}
+  - {fileID: -7773440322307994818}
+  - {fileID: -5882563637443659577}
+  - {fileID: -9207732565906356745}
+  - {fileID: 6792319367553037389}
+  - {fileID: -2292030655542705518}
+  - {fileID: 96407614214849184}
   treeState: 0
   blackboard:
     maxDistance: 1
@@ -642,7 +1878,7 @@ MonoBehaviour:
     enemyType: 
     Aggro: 0
     StateChanged: 0
---- !u!114 &703890808667072982
+--- !u!114 &55202703900231749
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -651,13 +1887,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4224d0b66cbe863428df579aee3384bf, type: 3}
-  m_Name: SelectorNode
+  m_Script: {fileID: 11500000, guid: ddaf5ebdc4d15c746b7f4d76f8a21ba8, type: 3}
+  m_Name: WaitNode
   m_EditorClassIdentifier: 
   state: 0
   started: 0
-  guid: 0f8f6fdc8522a624996fd9f011c9a739
-  pos: {x: 2684.6802, y: 1058.5}
+  guid: 069950ac9f0dc944da693073ad200721
+  pos: {x: 4582, y: 2128.9285}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -667,7 +1903,112 @@ MonoBehaviour:
     StateChanged: 0
   agent: {fileID: 0}
   description: 
-  Children: []
+  waitTime: 10
+--- !u!114 &96407614214849184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b41a703ddda7a44a1857a2964708b7, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: de2ee68ee95ce9e4f867fd5e6aff230c
+  pos: {x: 4594.5127, y: 1875}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  Children:
+  - {fileID: 55202703900231749}
+  - {fileID: -8350070729875191840}
+--- !u!114 &524519917109930429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddaf5ebdc4d15c746b7f4d76f8a21ba8, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 64c971d03acefcc4cb6ef73c9a897838
+  pos: {x: 1446.9999, y: 2122.0002}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  waitTime: 2
+--- !u!114 &651827035251994276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49fb3336f5d421b4abd0cb8f4011b624, type: 3}
+  m_Name: SetAgro
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 1bdcef20c2f99c24d97ab64ade96a98c
+  pos: {x: 1508.6431, y: 1524}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  SetValue: 0
+--- !u!114 &687963411882935093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b719b3a2aec1a4a8d36e5d51bd790c, type: 3}
+  m_Name: StrongAttack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 84223f62da00dbf4dad61a2d20159dc4
+  pos: {x: 5791.001, y: 2858.6519}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
 --- !u!114 &787185950245649074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,7 +2024,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 2a0f6964260f99d43a83107aeb29b8d1
-  pos: {x: 1861, y: 1077}
+  pos: {x: 3053.086, y: 1375.5}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -693,8 +2034,140 @@ MonoBehaviour:
     StateChanged: 0
   agent: {fileID: 0}
   description: 
-  Children: []
---- !u!114 &1108913727718599478
+  Children:
+  - {fileID: 5614837175192473567}
+  - {fileID: 7716166589328344941}
+  - {fileID: 4206956112337361282}
+--- !u!114 &1007890180176761832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2385cfbae820d444851e81a45de6019, type: 3}
+  m_Name: IfFalse
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: b1e7fb59549ad7b43958dca2cc606c76
+  pos: {x: -417.13, y: 806.49994}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: 6546131261061013938}
+--- !u!114 &1030091572542746768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c35bbdf5706ca241a6ee4e44b0e3a6f, type: 3}
+  m_Name: RandomChance
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 9841d50b17c6f5049b5287e9a8ab74d7
+  pos: {x: 3735, y: 1972}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: 4755577567766142452}
+  PassRange: 0.025
+--- !u!114 &1414836842255100654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddaf5ebdc4d15c746b7f4d76f8a21ba8, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: e3ee9c8bb01577c44a990ed4fb9c762e
+  pos: {x: 6269.001, y: 2857.6519}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  waitTime: 5
+--- !u!114 &1468342710698947021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2098959f8a9b700418cad0553fb408aa, type: 3}
+  m_Name: LookAtPlayer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: b52a71d41a3c9f341880eb6adf8aa380
+  pos: {x: 3615.0005, y: 2300.5}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &1547195005326109753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d869659483494fb4782da9e3d469be1a, type: 3}
+  m_Name: StopMovement
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 5bea749b8e37d8f4592f6a88b932805e
+  pos: {x: 2638.585, y: 1971}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &1626590053097362151
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -708,8 +2181,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   started: 0
-  guid: cd53afd6511fef741affd3c447e2eb06
-  pos: {x: -0.000024557114, y: 149.66006}
+  guid: 20bef670c8c0dc3459ac14d97d727e20
+  pos: {x: 1302.6432, y: 1967.0002}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -720,8 +2193,173 @@ MonoBehaviour:
   agent: {fileID: 0}
   description: 
   Children:
-  - {fileID: 5531144545325551657}
-  - {fileID: -603796230817218410}
+  - {fileID: 9102441754906820836}
+  - {fileID: 2111251392865923556}
+  - {fileID: 524519917109930429}
+  - {fileID: -1412107791820295062}
+--- !u!114 &1881612826547762646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddaf5ebdc4d15c746b7f4d76f8a21ba8, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: a11c8315d82c575448d0f811c4d01ed4
+  pos: {x: 77, y: 910.5}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  waitTime: 0.5
+--- !u!114 &1885382467571431223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2385cfbae820d444851e81a45de6019, type: 3}
+  m_Name: IfFalse
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: e5d3d72ff713ff1438b576b2b9747b58
+  pos: {x: 580.643, y: 2315}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: -5448057987174715726}
+--- !u!114 &1973213817571911571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cef7af76457eb0c48a3b18e55d096c1e, type: 3}
+  m_Name: FireBreath
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: a59546ccb66140648879cdb65c3f55b6
+  pos: {x: 3765.0005, y: 2301}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &2049153784329806978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b41a703ddda7a44a1857a2964708b7, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 0bf60bd2d805ece4e8eb334490cb9f68
+  pos: {x: 5716.001, y: 2556.6516}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  Children:
+  - {fileID: -6491140160718737006}
+  - {fileID: 2810874664767306079}
+  - {fileID: -5822021612800129602}
+  - {fileID: 687963411882935093}
+  - {fileID: -6971899822926369929}
+  - {fileID: -8171798561991352942}
+  - {fileID: 1414836842255100654}
+  - {fileID: -7773440322307994818}
+--- !u!114 &2111251392865923556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196fef255d8668549aa8405c0d3e89ff, type: 3}
+  m_Name: LeftSwipe
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 45e726aeb09b2574280ef97faec025c0
+  pos: {x: 1273.9999, y: 2122.0002}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &2183577567757530703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c35bbdf5706ca241a6ee4e44b0e3a6f, type: 3}
+  m_Name: RandomChance
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 2d15ff442db9acf47b6d7f4244917a8e
+  pos: {x: 7143.001, y: 2484.6519}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: 8720413668022736403}
+  PassRange: 0.65
 --- !u!114 &2261535585439050371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,7 +2375,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 3923d0941b4ddca499eb09a61a570812
-  pos: {x: -536, y: 607}
+  pos: {x: -841.985, y: 568}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -762,7 +2400,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: b1b563e2963455743803bd2f841a41f9
-  pos: {x: 508.00006, y: 963.00006}
+  pos: {x: 1235.643, y: 1184}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -773,8 +2411,36 @@ MonoBehaviour:
   agent: {fileID: 0}
   description: 
   Children:
-  - {fileID: -2222204338189276311}
-  - {fileID: -660188746259777929}
+  - {fileID: -8206822552752112187}
+  - {fileID: 7172114338206935061}
+--- !u!114 &2440844423665235078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4224d0b66cbe863428df579aee3384bf, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 9e89ff1fc828b6947babac525f5ed76e
+  pos: {x: 0, y: 153}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  Children:
+  - {fileID: 5531144545325551657}
+  - {fileID: -603796230817218410}
 --- !u!114 &2675069920516789121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -790,7 +2456,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 4e8105cfc93c2f4478b4a3c587e209a5
-  pos: {x: 358, y: 810}
+  pos: {x: 890.643, y: 995.99994}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -803,6 +2469,109 @@ MonoBehaviour:
   Children:
   - {fileID: -6513188926901784247}
   - {fileID: 2293393063139656270}
+--- !u!114 &2810874664767306079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2098959f8a9b700418cad0553fb408aa, type: 3}
+  m_Name: LookAtPlayer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: af49e2dff6869f544ba583c530d6e5bb
+  pos: {x: 5491.001, y: 2857.6519}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &2814344755602870997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49fb3336f5d421b4abd0cb8f4011b624, type: 3}
+  m_Name: SetAgro
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: f7691ca8d807d18418dd55c0f1512b4e
+  pos: {x: 3800, y: 1331}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  SetValue: 1
+--- !u!114 &2884320343666670479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2385cfbae820d444851e81a45de6019, type: 3}
+  m_Name: IfFalse
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: a646dd1be6b96a046824c37bf9bb4a99
+  pos: {x: 3116, y: 1843}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: -6899399643943993080}
+--- !u!114 &3123232159862440923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2385cfbae820d444851e81a45de6019, type: 3}
+  m_Name: IfFalse
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: b33a6d58e3552204e971d86fd4f233d0
+  pos: {x: 2299, y: 1808}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: 5059671215019062632}
 --- !u!114 &3241078865503774880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -818,7 +2587,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 30c899e4432413c41922ec1dea9c257f
-  pos: {x: -227.51248, y: 1820.0002}
+  pos: {x: -305.3569, y: 2006}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -829,6 +2598,33 @@ MonoBehaviour:
   agent: {fileID: 0}
   description: 
   child: {fileID: -4233285195304158290}
+--- !u!114 &3264319541280066404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c35bbdf5706ca241a6ee4e44b0e3a6f, type: 3}
+  m_Name: RandomChance
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 68915e489af30064c9cbb5b0440c3deb
+  pos: {x: 3323, y: 2074}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: -1251104307441446438}
+  PassRange: 0.66
 --- !u!114 &3400627203022324360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -844,7 +2640,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 79ef81571c6b97f4da2c057f4bead15a
-  pos: {x: 1800, y: 780}
+  pos: {x: 2966.086, y: 866.50006}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -855,8 +2651,34 @@ MonoBehaviour:
   agent: {fileID: 0}
   description: 
   Children:
+  - {fileID: -3106801245392577621}
   - {fileID: -7618335864131896398}
   - {fileID: 787185950245649074}
+--- !u!114 &3657247544410297952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d869659483494fb4782da9e3d469be1a, type: 3}
+  m_Name: StopMovement
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 79927c2faa101b84b9becdec74c93482
+  pos: {x: 4406.557, y: 2003.0002}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
 --- !u!114 &3839102905973728574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -882,7 +2704,36 @@ MonoBehaviour:
     StateChanged: 0
   agent: {fileID: 0}
   description: 
-  child: {fileID: 1108913727718599478}
+  child: {fileID: 2440844423665235078}
+--- !u!114 &4206956112337361282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b41a703ddda7a44a1857a2964708b7, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: d374a4a59a9f43746b87ddc4a9c9a050
+  pos: {x: 4507.021, y: 1717.9998}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  Children:
+  - {fileID: 6098134163911483283}
+  - {fileID: 3657247544410297952}
+  - {fileID: 96407614214849184}
 --- !u!114 &4508900404422752954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -898,7 +2749,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 868231b6200187a49b01992d8ed0c79a
-  pos: {x: -354, y: 668}
+  pos: {x: -659.985, y: 641}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -909,6 +2760,63 @@ MonoBehaviour:
   agent: {fileID: 0}
   description: 
   child: {fileID: 4846262093826800347}
+--- !u!114 &4589291714785731914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ef38c529fcf7be43a616b88c61ee79f, type: 3}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 8e45bd7de839e634183a6882a23849f9
+  pos: {x: 1123.6432, y: 1967.0002}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  message: In Melee
+--- !u!114 &4755577567766142452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b41a703ddda7a44a1857a2964708b7, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: f3f9d59d622a7e24a961fbe54ea6dffb
+  pos: {x: 3684, y: 2134}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  Children:
+  - {fileID: -6177139587331414347}
+  - {fileID: 1468342710698947021}
+  - {fileID: 1973213817571911571}
+  - {fileID: 6792319367553037389}
+  - {fileID: -2292030655542705518}
 --- !u!114 &4846262093826800347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -924,7 +2832,83 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 76b7b83ae1220b6489df9100882ef7d0
-  pos: {x: -354, y: 776.5}
+  pos: {x: -659.985, y: 750.00006}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &4905593866224114176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54b11a67fa09b21499687ca9f6d58611, type: 3}
+  m_Name: GoToTargetNavmesh
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: ef37b2696d0fa964588441ded88443aa
+  pos: {x: 16.643097, y: 2132}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &4990192312986156242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ef38c529fcf7be43a616b88c61ee79f, type: 3}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: f0e9954752744c84b8ae47fb81afbe80
+  pos: {x: 4306.001, y: 2861.6519}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  message: Strong to left
+--- !u!114 &5059671215019062632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46af2bfbf43caf84d971e03354474ae5, type: 3}
+  m_Name: MeleeSensorCheck
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: fd528c05ba7309d4499b686ac9ad31c8
+  pos: {x: 2282, y: 1972}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -949,7 +2933,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 734dfbf3214a1c44a82178f98bff1792
-  pos: {x: 211, y: 1181}
+  pos: {x: 743.6431, y: 1367}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -959,7 +2943,10 @@ MonoBehaviour:
     StateChanged: 0
   agent: {fileID: 0}
   description: 
-  Children: []
+  Children:
+  - {fileID: 8679192119962473200}
+  - {fileID: -394240751118516711}
+  - {fileID: -1927466530192934169}
 --- !u!114 &5477722159696096733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -975,7 +2962,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 45de30ff4fc10b64fa01a50f77be1e9b
-  pos: {x: -377.5125, y: 1820.0002}
+  pos: {x: -455.35696, y: 2006}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -1001,7 +2988,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 4d1286af41981c14a995805a0a7fa564
-  pos: {x: -785.0056, y: 291.00397}
+  pos: {x: -1095.7876, y: 303.99994}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -1014,6 +3001,35 @@ MonoBehaviour:
   Children:
   - {fileID: -8780729430068825424}
   - {fileID: -5060222483365506896}
+--- !u!114 &5614837175192473567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b41a703ddda7a44a1857a2964708b7, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: d269c81c3f44c7e41a795683c8ba1658
+  pos: {x: 2482, y: 1582}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  Children:
+  - {fileID: 3123232159862440923}
+  - {fileID: -6068802747015865526}
+  - {fileID: -3039848793316941761}
 --- !u!114 &5652354911544890905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1029,7 +3045,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 0bd41ce6671fbd54caa7c1d6e1d613ad
-  pos: {x: 1861, y: 618}
+  pos: {x: 3027.086, y: 704.50006}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -1042,6 +3058,114 @@ MonoBehaviour:
   Children:
   - {fileID: 3400627203022324360}
   - {fileID: 7903019486440400001}
+--- !u!114 &5749882080284939206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b41a703ddda7a44a1857a2964708b7, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 9f6a75a3753a2e04aaa39ea79e1f0523
+  pos: {x: -64, y: 504}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: Play Animation of behaviour change
+  Children:
+  - {fileID: 1007890180176761832}
+  - {fileID: 5993383060687287357}
+  - {fileID: 6567111292157181399}
+  - {fileID: 1881612826547762646}
+  - {fileID: -2321218790237107133}
+  - {fileID: 8670430572178158798}
+--- !u!114 &5862027262056689397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196fef255d8668549aa8405c0d3e89ff, type: 3}
+  m_Name: LeftSwipe
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 48c419646ecc01a4caabeea2a0e7f353
+  pos: {x: 7329.001, y: 2839.6516}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &5993383060687287357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2385cfbae820d444851e81a45de6019, type: 3}
+  m_Name: IfFalse
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: c3b5dc0e581089f40bd26b8c2e6cf08b
+  pos: {x: -239.13, y: 806.49994}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: -1283004917534460341}
+--- !u!114 &6098134163911483283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46af2bfbf43caf84d971e03354474ae5, type: 3}
+  m_Name: MeleeSensorCheck
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: eb15b2409ac14cc46b2cea40e25074bf
+  pos: {x: 4214.0005, y: 1983.0001}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
 --- !u!114 &6340653992450906270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1057,7 +3181,33 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 45dc1c2552ccb2848b6f0c6d5eeb7b8f
-  pos: {x: 1351, y: 750}
+  pos: {x: 2517.086, y: 890.50006}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  Percentage: 50
+--- !u!114 &6396289147454004292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46af2bfbf43caf84d971e03354474ae5, type: 3}
+  m_Name: MeleeSensorCheck
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 783b69c1b70b6604a932fbd99db064bd
+  pos: {x: 323.6431, y: 2169}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -1082,7 +3232,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 95740cf3baf92ee4e84b8344fa05ebf1
-  pos: {x: 1391, y: 618}
+  pos: {x: 2557.086, y: 704.50006}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -1093,7 +3243,7 @@ MonoBehaviour:
   agent: {fileID: 0}
   description: 
   child: {fileID: 6340653992450906270}
---- !u!114 &7740063866389838984
+--- !u!114 &6446206875026532773
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1102,13 +3252,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1e9100dfd63c944c9ca4e428df843e1, type: 3}
-  m_Name: CheckAggro
+  m_Script: {fileID: 11500000, guid: 82b41a703ddda7a44a1857a2964708b7, type: 3}
+  m_Name: SequencerNode
   m_EditorClassIdentifier: 
   state: 0
   started: 0
-  guid: 7eb9d94851cf21c49915568c495a5bfc
-  pos: {x: 458, y: 1225}
+  guid: a26226436b9c7614ca7e60cef4c1c8b6
+  pos: {x: 4775.001, y: 2655.6516}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -1118,6 +3268,148 @@ MonoBehaviour:
     StateChanged: 0
   agent: {fileID: 0}
   description: 
+  Children:
+  - {fileID: 4990192312986156242}
+  - {fileID: -338500959226532756}
+  - {fileID: -5587826479553081692}
+  - {fileID: -4659812230731314939}
+  - {fileID: -4022806851049450831}
+  - {fileID: -4279911399105620215}
+--- !u!114 &6546131261061013938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46e685317a7da2049b420ceaab91a179, type: 3}
+  m_Name: HealthIsAboveXPercentage
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 8f71805e7797c194085aaab1372fff53
+  pos: {x: -455.13, y: 946.5}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  Percentage: 50
+--- !u!114 &6567111292157181399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 640613461ada3054b8b7b52456773cb7, type: 3}
+  m_Name: PlayPhaseChangeAnim
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 3013eab6cc13b0c45a8e283484b128fd
+  pos: {x: -89, y: 822}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &6792319367553037389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddaf5ebdc4d15c746b7f4d76f8a21ba8, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 315adbe472e3d2141bdf8739b5771d60
+  pos: {x: 3915.0005, y: 2301}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  waitTime: 5
+--- !u!114 &7172114338206935061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b41a703ddda7a44a1857a2964708b7, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 4eb383be4310f574cb2b72ac148cec7b
+  pos: {x: 1402.643, y: 1353}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  Children:
+  - {fileID: 8314306170742935679}
+  - {fileID: 7966439327206844176}
+  - {fileID: 651827035251994276}
+--- !u!114 &7716166589328344941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b41a703ddda7a44a1857a2964708b7, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 66726024aeefa794d812fa4e6d8f8c31
+  pos: {x: 3183.0005, y: 1594}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  Children:
+  - {fileID: 2884320343666670479}
+  - {fileID: -4412472438446363117}
+  - {fileID: 8485614370734495338}
 --- !u!114 &7903019486440400001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1133,7 +3425,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 2948e4d6922543c46960b4217850d79a
-  pos: {x: 2534.6802, y: 761.5}
+  pos: {x: 3435.086, y: 855.5001}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -1145,7 +3437,7 @@ MonoBehaviour:
   description: 
   Children:
   - {fileID: -4551182474621199470}
-  - {fileID: 703890808667072982}
+  - {fileID: -5610622090912627642}
 --- !u!114 &7925547772537143493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1172,6 +3464,82 @@ MonoBehaviour:
   agent: {fileID: 0}
   description: 
   child: {fileID: 3839102905973728574}
+--- !u!114 &7966439327206844176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d869659483494fb4782da9e3d469be1a, type: 3}
+  m_Name: StopMovement
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: fb8fd58d1ab7cea42a727bc0454e7f6f
+  pos: {x: 1402.643, y: 1626}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &8017749303995266853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2098959f8a9b700418cad0553fb408aa, type: 3}
+  m_Name: LookAtPlayer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 46dc180378c810042b9f409a995806f5
+  pos: {x: 907.643, y: 2315}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &8068047641050093558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96111fa4a8eb6f4a802bec9d9b96275, type: 3}
+  m_Name: SetStateChanged
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 204182d79280d9443a323a3e67176fe9
+  pos: {x: 3647, y: 1331}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  SetStateChange: 0
 --- !u!114 &8313706715353801485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1187,7 +3555,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 67b800f25e0d024489fcd5a5a2267e41
-  pos: {x: -354.0835, y: 451.7714}
+  pos: {x: -659.985, y: 425}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -1201,6 +3569,86 @@ MonoBehaviour:
   - {fileID: 2261535585439050371}
   - {fileID: 4508900404422752954}
   - {fileID: -1612665212174464511}
+--- !u!114 &8314306170742935679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddaf5ebdc4d15c746b7f4d76f8a21ba8, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 172f9431e666acf4db1300b88c9c3e7c
+  pos: {x: 1306.643, y: 1524}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  waitTime: 3
+--- !u!114 &8485614370734495338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4224d0b66cbe863428df579aee3384bf, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: acc6f74850f855a459d0163d4afc9e9e
+  pos: {x: 3660, y: 1815}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  Children:
+  - {fileID: 3264319541280066404}
+  - {fileID: 1030091572542746768}
+--- !u!114 &8670430572178158798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddaf5ebdc4d15c746b7f4d76f8a21ba8, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: d88153737becf6d418cff87ca9fecba1
+  pos: {x: 328.99994, y: 822}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  waitTime: 1.5
 --- !u!114 &8679192119962473200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1216,7 +3664,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: a039d5feebdcc754f865a1be12a330b3
-  pos: {x: 94.487495, y: 1592.0001}
+  pos: {x: 16.643097, y: 1778}
   blackboard:
     maxDistance: 1
     maxTime: 1
@@ -1229,3 +3677,59 @@ MonoBehaviour:
   Children:
   - {fileID: 5477722159696096733}
   - {fileID: 3241078865503774880}
+  - {fileID: 4905593866224114176}
+--- !u!114 &8720413668022736403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b41a703ddda7a44a1857a2964708b7, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: c77d1c9a7b645ae489ba6f4f85fcf44f
+  pos: {x: 7143.001, y: 2653.6519}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 
+  Children:
+  - {fileID: -9009848305719899581}
+  - {fileID: -5026672092674249160}
+  - {fileID: -914674678131103053}
+  - {fileID: 5862027262056689397}
+--- !u!114 &9102441754906820836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2098959f8a9b700418cad0553fb408aa, type: 3}
+  m_Name: LookAtPlayer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 32febade3d71bc94b906488a7c055e75
+  pos: {x: 1109, y: 2122}
+  blackboard:
+    maxDistance: 1
+    maxTime: 1
+    alive: 1
+    enemyType: 
+    Aggro: 0
+    StateChanged: 0
+  agent: {fileID: 0}
+  description: 

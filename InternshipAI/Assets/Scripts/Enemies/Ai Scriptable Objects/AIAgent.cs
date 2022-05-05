@@ -37,14 +37,18 @@ public class AIAgent : MonoBehaviour
     [Tooltip("Current Health of the AI")]
     public float currentHealth;
 
+
     //private variables
     GameObject thisGameObject;
-    
-    
+    [Tooltip("Fire Particle For the Breath attack")]
+    public GameObject FireParticle;
+
+    [Tooltip("smoke Particle For the Phase Change")]
+    public GameObject ChangeParticle;
 
 
 
-  
+
     // Start is called before the first frame update
     void Start()
     {

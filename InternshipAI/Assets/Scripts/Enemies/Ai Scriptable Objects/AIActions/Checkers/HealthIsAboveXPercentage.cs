@@ -5,7 +5,7 @@ using AI;
 
 public class HealthIsAboveXPercentage : ActionNode
 {
-    [Min(1)]int Percentage = 50;
+    [Range(1, 99)] public float Percentage = 50;
     protected override void OnStart()
     {
        
@@ -19,7 +19,8 @@ public class HealthIsAboveXPercentage : ActionNode
     protected override State OnUpdate()
     {
         float currPercentage = Percentage / 100;
-        if(agent.currentHealth > (agent.currentHealth*currPercentage))
+      
+        if(agent.currentHealth >= (agent.HealthMax*currPercentage))
         {
             return State.SUCCESS;
         }

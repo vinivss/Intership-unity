@@ -66,6 +66,7 @@ public class AggroRange : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             GameObject obj = colliders[i].gameObject;
+            objects.Add(obj);
         }
     }
     private void OnValidate()

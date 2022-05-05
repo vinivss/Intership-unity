@@ -9,6 +9,8 @@ public class DebugNavMeshAgent : MonoBehaviour
     public bool velocity;
     public bool desiredVelocity;
     public bool path;
+
+    public bool Destination;
     NavMeshAgent agent;
     // Start is called before the first frame update
     void Start()
@@ -37,7 +39,10 @@ public class DebugNavMeshAgent : MonoBehaviour
         if (path)
         {
             Gizmos.color = Color.blue;
-            var agentPath = agent.path;
+          
+            
+                var agentPath = agent.path;
+            
             Vector3 prevCorner = transform.position;
             foreach(var corner in agentPath.corners)
             {
@@ -47,5 +52,14 @@ public class DebugNavMeshAgent : MonoBehaviour
                 prevCorner = corner;
             }
         }
+
+        if(Destination)
+        {
+            Gizmos.color = Color.magenta;
+
+            Gizmos.DrawSphere(agent.destination, 0.5f);
+        }
+
+
     }
 }

@@ -16,7 +16,8 @@ public class LookAtPlayer : ActionNode
 
     protected override State OnUpdate()
     {
-        agent.transform.LookAt(agent.targetList[0].transform);
+        Transform playerPos = GameObject.FindGameObjectWithTag("Player").transform;
+        agent.transform.LookAt(playerPos);
 
         return State.SUCCESS;
     }
