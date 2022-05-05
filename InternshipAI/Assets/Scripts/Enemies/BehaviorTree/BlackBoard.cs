@@ -17,4 +17,6 @@ public class BlackBoard
 
     [Tooltip("Has the Animation change for Stage Change activated")]
     public bool StateChanged = false;
+
+    public bool isAtttacking = false;
 }
